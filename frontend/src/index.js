@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Footer from './components/footer';
 
 
 ReactDOM.render(
-<h1>Test</h1>,
+<Footer/>,
   document.getElementById('root')
 );
