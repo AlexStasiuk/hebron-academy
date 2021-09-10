@@ -6,7 +6,19 @@ import {ReactComponent as VisionLogo} from './vision.svg';
 import {ReactComponent as ContactsLogo} from './contacts.svg';
 import {ReactComponent as CredentialsLogo} from './credentials.svg';
 
+import HebronInfoImageRight from '../hebron-info-image-right';
+import HebronInfoImageLeft from '../hebron-info-image-left';
+
 import HebronHeaderImage from './Hebron-Header.png';
+import OurGraduatesImage from './OurGraduates.png';
+import EducationImage from './education.png';
+import PosibilitiesImage from './Posibilities.png';
+import CommandImage from './Command.png';
+
+const OurGraduatesText = <div><span>В перспективі стають не лише кваліфікованими спеціалістами в галузі IT, а й</span> <b>СВІДОМИМИ</b> <span>та</span> <b>АКТИВНИМИ</b> <span>громадянами сучасного суспільства</span></div>;
+const EducationText = <div><span> 5 років тому ми задумались, яким чином можна допомогти кризовій молоді, в якої є потенціал, але немає можливості успішно самореалізуватись у суспільстві, через брак коштів та моральної підтримки. І зрозуміли, що найкраща допомога - це </span><b>ОСВІТА</b></div>;
+const PosibilitiesText = <div><span>- це молоді люди з числа сиріт та випускників інтернатів, внутрішньо переміщені особи, діти учасників воїнів АТО,  а також та молодь, яка опинилася у складних життєвих обставинах. Це хлопці та дівчата, які можуть та хочуть працювати, розвиватися та приносити користь суспільству. Все, що їм потрібно, це  дати</span> <b>МОЖЛИВІСТЬ</b></div>;
+const CommandText = <div>Хеврон ІТ Академія - це спільнота  людей,  яким важлива доля соціально незахищеної молоді в Україні. Ми об’єднуємо довкола себе меценатів, жертводавців, волонтерів, менторів та просто небайдужих людей! </div>
 
 const MainPage = () =>{
     return (
@@ -66,7 +78,6 @@ const MainPage = () =>{
             <div className='empty-block-1 row no-gutters'>
                 <div className='col-12'></div>
             </div>
-
             <div className='second-block-wrapper row no-gutters'>
                 <div className='col-1'></div>
                 <div className='col-10 main-header-block-wrapper'>
@@ -136,6 +147,28 @@ const MainPage = () =>{
                 </div>
                 <div className='col-1'></div>
             </div>
+            <HebronInfoImageRight 
+                img={EducationImage} 
+                title='Початок великої місії' 
+                text={EducationText} 
+                redTitle='ОСВІТА'/>
+            <HebronInfoImageLeft 
+                img={PosibilitiesImage}
+                redTitle='МОЖЛИВІСТЬ'
+                title='Студенти Хеврон IT Академії'
+                text={PosibilitiesText}
+                />
+            <HebronInfoImageRight 
+                img={OurGraduatesImage} 
+                title='Наші випускники' 
+                text={OurGraduatesText} 
+                redTitle='МАЙБУТНЄ'/>
+            <HebronInfoImageLeft 
+                img={CommandImage}
+                redTitle='КОМАНДА'
+                title='Приєднуйтесь до нас!'
+                text={CommandText}
+                />
         </div>
     );
 }
