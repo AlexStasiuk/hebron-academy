@@ -188,3 +188,14 @@
 .main-header-block:hover .header-text{
     display: inherit;
 }
+.Ukraine-map-wrapper{
+
+}
+.Ukraine-map-middleblock{
+    height: 100%;
+    width: 100%;
+}
+.Ukraine-map{
+    height: 100%;
+    width: 100%;
+}

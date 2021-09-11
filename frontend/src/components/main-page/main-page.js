@@ -5,6 +5,7 @@ import {ReactComponent as MissionLogo} from './Mission.svg';
 import {ReactComponent as VisionLogo} from './vision.svg';
 import {ReactComponent as ContactsLogo} from './contacts.svg';
 import {ReactComponent as CredentialsLogo} from './credentials.svg';
+import {ReactComponent as UkraineHebronMap} from './Habron design (1).svg';
 
 import HebronInfoImageRight from '../hebron-info-image-right';
 import HebronInfoImageLeft from '../hebron-info-image-left';
@@ -158,6 +159,11 @@ const MainPage = () =>{
                 title='Студенти Хеврон IT Академії'
                 text={PosibilitiesText}
                 />
+            <div className='Ukraine-map-wrapper row no-gutters'>
+                <div className='col-12 Ukraine-map-middleblock'>
+                    <UkraineHebronMap className=' Ukraine-map'/>
+                </div>
+            </div>
             <HebronInfoImageRight 
                 img={OurGraduatesImage} 
                 title='Наші випускники' 
