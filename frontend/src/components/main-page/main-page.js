@@ -15,6 +15,7 @@ import OurGraduatesImage from './OurGraduates.png';
 import EducationImage from './education.png';
 import PosibilitiesImage from './Posibilities.png';
 import CommandImage from './Command.png';
+import MainPageJoinHebron from '../main-page-join-hebron';
 
 const OurGraduatesText = <div><span>В перспективі стають не лише кваліфікованими спеціалістами в галузі IT, а й</span> <b>СВІДОМИМИ</b> <span>та</span> <b>АКТИВНИМИ</b> <span>громадянами сучасного суспільства</span></div>;
 const EducationText = <div><span> 5 років тому ми задумались, яким чином можна допомогти кризовій молоді, в якої є потенціал, але немає можливості успішно самореалізуватись у суспільстві, через брак коштів та моральної підтримки. І зрозуміли, що найкраща допомога - це </span><b>ОСВІТА</b></div>;
