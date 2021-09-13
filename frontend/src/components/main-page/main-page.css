@@ -1,5 +1,6 @@
 .main-page-wrapper{
     width:100%;
+    margin-bottom: 200px;
 }
 
 .first-block-wrapper{
@@ -188,9 +189,7 @@
 .main-header-block:hover .header-text{
     display: inherit;
 }
-.Ukraine-map-wrapper{
 
-}
 .Ukraine-map-middleblock{
     height: 100%;
     width: 100%;

@@ -15,6 +15,7 @@ const MainPageJoinHebron = () =>{
     const sendData = (e) =>{
         e.preventDefault();
         console.log("info:",info);
+        setInfo({pib:'',number:'',email:'',comment:''});
     }
     return(
         <div className='main-page-join-hebron-wrapper row no-gutters'>

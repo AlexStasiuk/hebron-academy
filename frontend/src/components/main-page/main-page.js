@@ -10,14 +10,26 @@ import {ReactComponent as UkraineHebronMap} from './Habron design (1).svg';
 import HebronInfoImageRight from '../hebron-info-image-right';
 import HebronInfoImageLeft from '../hebron-info-image-left';
 import MainPageJoinHebron from '../main-page-join-hebron';
+import NewsInMainPage from '../news-in-main-page/news-in-main-page';
 
 import HebronHeaderImage from './Hebron-Header.png';
 import OurGraduatesImage from './OurGraduates.png';
 import EducationImage from './education.png';
 import PosibilitiesImage from './Posibilities.png';
 import CommandImage from './Command.png';
+import News1Image from './News1.png';
+import News2Image from './News2.png';
+import News3Image from './News3.png';
 
 
+//Data for the news
+const News1 = {id: 1, img: News1Image, red_title: 'Newsletter', title: 'Join a charity project', text: 'Friends, 16 new students from different cities and villages of Ukraine have already come to study at Hebron IT Academy. All of them are from the social crisis category...'};
+const News2 = {id: 2, img: News2Image, red_title: "Success Story",title: 'Vlad Ostafii`s Success Story', text:'Hebron provided me with many opportunities, such as...'};
+const News3 = {id: 3, img: News3Image, red_title: 'Blog', title: 'How Can I Pray for Orphans?', text:'I bow my knees before the Father, From whom every family in heaven and on earth is named...'};
+const News4 = {id: 4, img: News2Image, red_title: 'Test', title: 'Test', text: 'Test'};
+let AllNewsForMainPage = [News1, News2, News3, News4];
+
+//Text for hebron-info-image-right and hebron-info-image-left
 const OurGraduatesText = <div><span>В перспективі стають не лише кваліфікованими спеціалістами в галузі IT, а й</span> <b>СВІДОМИМИ</b> <span>та</span> <b>АКТИВНИМИ</b> <span>громадянами сучасного суспільства</span></div>;
 const EducationText = <div><span> 5 років тому ми задумались, яким чином можна допомогти кризовій молоді, в якої є потенціал, але немає можливості успішно самореалізуватись у суспільстві, через брак коштів та моральної підтримки. І зрозуміли, що найкраща допомога - це </span><b>ОСВІТА</b></div>;
 const PosibilitiesText = <div><span>- це молоді люди з числа сиріт та випускників інтернатів, внутрішньо переміщені особи, діти учасників воїнів АТО,  а також та молодь, яка опинилася у складних життєвих обставинах. Це хлопці та дівчата, які можуть та хочуть працювати, розвиватися та приносити користь суспільству. Все, що їм потрібно, це  дати</span> <b>МОЖЛИВІСТЬ</b></div>;
@@ -178,6 +190,7 @@ const MainPage = () =>{
                 text={CommandText}
                 />
             <MainPageJoinHebron/>
+            <NewsInMainPage data={AllNewsForMainPage} />
         </div>
     );
 }
