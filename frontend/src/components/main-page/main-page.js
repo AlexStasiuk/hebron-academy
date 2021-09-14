@@ -10,7 +10,8 @@ import {ReactComponent as CredentialsLogo} from './credentials.svg';
 import HebronInfoImageRight from '../hebron-info-image-right';
 import HebronInfoImageLeft from '../hebron-info-image-left';
 import MainPageJoinHebron from '../main-page-join-hebron';
-import NewsInMainPage from '../news-in-main-page/news-in-main-page';
+import NewsInMainPage from '../news-in-main-page';
+import CompaniesInMainPage from '../companies-in-main-page';
 
 import HebronHeaderImage from './Hebron-Header.png';
 import OurGraduatesImage from './OurGraduates.png';
@@ -21,6 +22,11 @@ import News1Image from './News1.png';
 import News2Image from './News2.png';
 import News3Image from './News3.png';
 import HebronUkrMap from './Habron design (2).png';
+import Comp1Image from './Comp1.png';
+import Comp2Image from './Comp2.png';
+import Comp3Image from './Comp3.png';
+import Comp4Image from './Comp4.png';
+import Comp5Image from './Comp5.png';
 
 
 //Data for the news
@@ -29,6 +35,14 @@ const News2 = {id: 2, img: News2Image, red_title: "Success Story",title: 'Vlad O
 const News3 = {id: 3, img: News3Image, red_title: 'Blog', title: 'How Can I Pray for Orphans?', text:'I bow my knees before the Father, From whom every family in heaven and on earth is named...'};
 const News4 = {id: 4, img: News2Image, red_title: 'Test', title: 'Test', text: 'Test'};
 let AllNewsForMainPage = [News1, News2, News3, News4];
+
+const Comp1 = {id:1, img: Comp1Image};
+const Comp2 = {id:2, img: Comp2Image};
+const Comp3 = {id:3, img: Comp3Image};
+const Comp4 = {id:4, img: Comp4Image};
+const Comp5 = {id:5, img: Comp4Image};
+const Comp6 = {id:6, img: Comp5Image};
+let AllCompaniesForMainPage1 = [Comp1, Comp2, Comp3, Comp4, Comp5, Comp6];
 
 //Text for hebron-info-image-right and hebron-info-image-left
 const OurGraduatesText = <div><span>В перспективі стають не лише кваліфікованими спеціалістами в галузі IT, а й</span> <b>СВІДОМИМИ</b> <span>та</span> <b>АКТИВНИМИ</b> <span>громадянами сучасного суспільства</span></div>;
@@ -217,7 +231,19 @@ const MainPage = () =>{
                 />
             <MainPageJoinHebron/>
             <NewsInMainPage data={AllNewsForMainPage} />
+            <div className='empty-block-1 row no-gutters'>
+                <div className='col-12'></div>
+            </div>            
+            <div className='empty-block-1 row no-gutters'>
+                <div className='col-12'></div>
+            </div>
+            <div className='empty-block-1 row no-gutters'>
+                <div className='col-12'></div>
+            </div>
+            <CompaniesInMainPage data={AllCompaniesForMainPage1} />
         </div>
+        
+
     );
 }
 export default MainPage;
