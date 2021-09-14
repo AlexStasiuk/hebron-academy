@@ -189,12 +189,52 @@
 .main-header-block:hover .header-text{
     display: inherit;
 }
-
-.Ukraine-map-middleblock{
-    height: 100%;
+.Ukraine-map-wrapper{
+    height: 800px;
     width: 100%;
+}
+.Ukraine-map-middleblock{
+    height: inherit;
+    width: 100%;
+    position: absolute;
 }
 .Ukraine-map{
     height: 100%;
     width: 100%;
+}
+.rel-map-main-p{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: 30%;
+    justify-content: space-between;
+
+}
+.red-title-on-map{
+    color:orange;
+}
+
+.btn-on-map{
+    background-color: #2F483D;
+    color: white;
+    border-style: solid;
+    border-color: orange;
+    width: 30%;
+    border-width: 1px;
+}
+.btn-on-map:hover{
+    background-color: orange;
+}
+.title-on-map{
+    font-size: 30px;
+}
+.text-on-map{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }

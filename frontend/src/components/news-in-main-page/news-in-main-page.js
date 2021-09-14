@@ -33,7 +33,7 @@ const NewsInMainPage = ({data}) =>{
             return [data[currentIndex], data[currentIndex + 1], data[currentIndex + 2]];
         }
         else {
-            currentIndex = 0;
+            setIndex(0);
             return [data[0], data[1], data[2]];
         }
     }

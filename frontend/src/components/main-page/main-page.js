@@ -5,7 +5,7 @@ import {ReactComponent as MissionLogo} from './Mission.svg';
 import {ReactComponent as VisionLogo} from './vision.svg';
 import {ReactComponent as ContactsLogo} from './contacts.svg';
 import {ReactComponent as CredentialsLogo} from './credentials.svg';
-import {ReactComponent as UkraineHebronMap} from './Habron design (1).svg';
+//import {ReactComponent as UkraineHebronMap} from './Habron design (1).svg';
 
 import HebronInfoImageRight from '../hebron-info-image-right';
 import HebronInfoImageLeft from '../hebron-info-image-left';
@@ -20,6 +20,7 @@ import CommandImage from './Command.png';
 import News1Image from './News1.png';
 import News2Image from './News2.png';
 import News3Image from './News3.png';
+import HebronUkrMap from './Habron design (2).png';
 
 
 //Data for the news
@@ -175,8 +176,33 @@ const MainPage = () =>{
                 />
             <div className='Ukraine-map-wrapper row no-gutters'>
                 <div className='col-12 Ukraine-map-middleblock'>
-                    <UkraineHebronMap className=' Ukraine-map'/>
+                    <img src={HebronUkrMap} className=' Ukraine-map' alt=''/>
                 </div>
+                <div className='col-3'></div>
+                <div className='col-4 rel-map-main-p'>
+                        <br></br>
+                        <span className='red-title-on-map'>
+                            ПІДТРИМКА
+                        </span>
+                        <span className='title-on-map'>
+                            Ми хочемо зробити більше!
+                        </span>
+                        <div className='text-on-map'>
+                            
+                                <span>на сьогоднішній день ми змогли допомогти лише невеликій </span>
+                                <span>кількості молодих людей, але нашої допомоги потребує значно</span>
+                                <span>більша кількість талановитих хлопців та дівчат по всій Україні і ми</span>
+                                <span>можемо це зробити<b> З ВАШОЮ ПІДТРИМКОЮ!</b> </span>
+                            
+                            
+                        </div>
+                        <br />
+                        <button className='btn-on-map'>
+                            Детальніше
+                        </button>
+                    
+                </div>
+                <div className='col-5'></div>
             </div>
             <HebronInfoImageRight 
                 img={OurGraduatesImage} 
