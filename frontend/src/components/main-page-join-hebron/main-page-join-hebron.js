@@ -1,10 +1,12 @@
-import React,{useState} from 'react';
+import React, {useState} from 'react';
+
 import './main-page-join-hebron.css';
 import RectImage from './Rect.png';
 
-const MainPageJoinHebron = () =>{
+const MainPageJoinHebron = (props) =>{
 
     const [info, setInfo] = useState({pib:'',number:'',email:'',comment:''});
+    //const [isSubmited, setIsSubmited] = useState(false);
     const setValues = (e) =>{
         console.log(e.target.value, e.target.name,info);
         let field = e.target.name;
@@ -15,6 +17,7 @@ const MainPageJoinHebron = () =>{
     const sendData = (e) =>{
         e.preventDefault();
         console.log("info:",info);
+        props.catchClick();
         setInfo({pib:'',number:'',email:'',comment:''});
     }
     return(
@@ -58,6 +61,7 @@ const MainPageJoinHebron = () =>{
                             value={info['comment']}
                             onChange={setValues}
                             placeholder='' />
+                        
                         <input 
                             type="submit" 
                             value="Надіслати" 

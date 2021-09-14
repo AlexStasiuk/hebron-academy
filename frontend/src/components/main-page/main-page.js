@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './main-page.css';
 import {ReactComponent as MissionLogo} from './Mission.svg';
@@ -12,6 +12,7 @@ import HebronInfoImageLeft from '../hebron-info-image-left';
 import MainPageJoinHebron from '../main-page-join-hebron';
 import NewsInMainPage from '../news-in-main-page';
 import CompaniesInMainPage from '../companies-in-main-page';
+import PopUpFormSubmit from '../pop-up-form-submit';
 
 import HebronHeaderImage from './Hebron-Header.png';
 import OurGraduatesImage from './OurGraduates.png';
@@ -51,6 +52,12 @@ const PosibilitiesText = <div><span>- це молоді люди з числа �
 const CommandText = <div>Хеврон ІТ Академія - це спільнота  людей,  яким важлива доля соціально незахищеної молоді в Україні. Ми об’єднуємо довкола себе меценатів, жертводавців, волонтерів, менторів та просто небайдужих людей! </div>
 
 const MainPage = () =>{
+    const [isPopUp, setPopUpValue] = useState(false);
+    const catchClickSubmit = () => {
+        setPopUpValue((value) => !value);
+    }
+    let popUp = isPopUp ? <PopUpFormSubmit onClick={catchClickSubmit}/> : null;
+
     return (
         <div className = 'main-page-wrapper'>
 
@@ -229,7 +236,8 @@ const MainPage = () =>{
                 title='Приєднуйтесь до нас!'
                 text={CommandText}
                 />
-            <MainPageJoinHebron/>
+            <MainPageJoinHebron catchClick={catchClickSubmit}
+            isPop = {isPopUp}/>
             <NewsInMainPage data={AllNewsForMainPage} />
             <div className='empty-block-1 row no-gutters'>
                 <div className='col-12'></div>
@@ -241,6 +249,7 @@ const MainPage = () =>{
                 <div className='col-12'></div>
             </div>
             <CompaniesInMainPage data={AllCompaniesForMainPage1} />
+            {popUp}
         </div>
         
 
