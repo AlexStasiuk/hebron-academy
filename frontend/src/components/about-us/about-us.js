@@ -91,7 +91,19 @@ const AboutUs = () =>{
                     </div>
                     <div className='empty-space-in-second-info-block'></div>
                 </div>
-
+            </div>
+            <div className='third-block-wrapper row no-gutters'>
+                <div className='col-2'></div>
+                <div className='col-4 third-block-large-text'>
+                    <span>Знайомтесь з</span>
+                    <span>командою Хеврону:</span>
+                </div>
+                <div className='col-4 third-block-smaller-text'>
+                   <span> 
+                       Хеврон ІТ Академія – це команда однодумців, професіоналів та небайдужих людей. Нам подобається те, що робимо, тому робимо це якісно. Ми відкриті,  любимо технології, і використовуємо їх щоб розширювати межі та втілювати найсміливіші ідеї. 
+                   </span>
+                </div>
+                <div className='col-2'></div>
             </div>
         </div>
     );

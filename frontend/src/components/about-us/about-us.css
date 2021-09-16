@@ -169,3 +169,22 @@
 .statut-item-wrapper:hover .header-logo-svg path{
     fill: black;
 }
+.third-block-wrapper{
+    height: 100px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+.third-block-large-text{
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    justify-content: center;
+}
+.third-block-smaller-text{
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
