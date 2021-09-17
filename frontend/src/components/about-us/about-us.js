@@ -175,6 +175,9 @@ const AboutUs = () =>{
             </div>
             <ReviewsForAboutUs data={dataForReviews} id={1}/>
             <VideoBlock />
+            <div className='title-block-for-about-us-page row no-gutters'>
+                Питання (FAQ)
+            </div>
             <FQAInAboutUs data={fqaData}/>
             {isPopUp}
         </div>
