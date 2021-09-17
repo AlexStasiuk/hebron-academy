@@ -25,6 +25,7 @@ import ReviewerPerson1 from './reviewerPhoto1.png';
 import AboutUsHeaderImage from './about-us-header-img.png';
 import PopUpPhotoGalleryInAboutUs from '../pop-up-photo-gallery-in-about-us';
 import ReviewsForAboutUs from '../reviews-for-about-us';
+import VideoBlock from '../video-block-about-us';
 const hebronCommand = [
     {id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
     {id:2, name: 'Орест Яцкуляк', position: 'Заступник директора по навчально виховній роботі.', img: Person2Image},
@@ -173,6 +174,7 @@ const AboutUs = () =>{
                 Відгуки
             </div>
             <ReviewsForAboutUs data={dataForReviews} id={1}/>
+            <VideoBlock />
             <FQAInAboutUs data={fqaData}/>
             {isPopUp}
         </div>
