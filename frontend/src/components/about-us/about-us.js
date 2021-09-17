@@ -1,11 +1,33 @@
 import React from 'react';
 
 import './about-us.css';
+
+//import HebronCommandInAboutUsPage from '../hebron-command-in-about-us-page';
+import FQAInAboutUs from '../FQA-in-about-us';
+
 import {ReactComponent as MissionLogo} from './Місія.svg';
 import {ReactComponent as VisionLogo} from './Бачення.svg';
 import {ReactComponent as GoalLogo} from './Ціль.svg';
 
+import Person1Image from './Person1.png';
+import Person2Image from './Person2.png';
+import Person3Image from './Person3.png';
+
 import AboutUsHeaderImage from './about-us-header-img.png';
+//const hebronCommand = [
+    //{id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
+    //{id:2, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person2Image},
+    //{id:3, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person3Image},
+    //{id:4, name: 'test', position: 'test', img: Person2Image}
+//];
+const fqaData = [
+    {id: 1, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
+    {id: 2, question: 'Хто може навчатись в Хеврон IT Академії?', answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.'},
+    {id: 3, question: 'Хто фінансує Академію?', answer: 'jfjf'},
+    {id: 4, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
+    {id: 5, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
+    {id: 6, question: 'Як долучитись до розвитку проекту?', answer: 'jfjf'}
+];
 const AboutUs = () =>{
     return(
         <div className='about-us-wrapper'>
@@ -105,6 +127,8 @@ const AboutUs = () =>{
                 </div>
                 <div className='col-2'></div>
             </div>
+            
+            <FQAInAboutUs data={fqaData}/>
         </div>
     );
 }

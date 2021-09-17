@@ -188,3 +188,6 @@
     flex-direction: row;
     align-items: center;
 }
+.forth-block-wrapper{
+    height: 300px;
+}

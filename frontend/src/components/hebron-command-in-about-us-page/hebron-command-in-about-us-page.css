@@ -1,0 +1,11 @@
+.hebron-command-wrapper{
+    height: 300px;
+    background-color: orchid;
+}
+.hebron-command-info-wrapper{
+    position: relative;
+    display: flex;
+}
+.controll-buttons{
+    position: absolute;
+}
