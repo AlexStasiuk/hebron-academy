@@ -4,11 +4,9 @@ import './photo-gallery-in-about-us-page.css';
 import {ReactComponent as LeftScrollHebronCommand} from './left-scroll-hebron-command-image.svg';
 import {ReactComponent as RightScrollHebronCommand} from './right-scroll-hebron-command-image.svg';
 
-const PhotoGalleryInAboutPage = ({data}) => {
+const PhotoGalleryInAboutPage = ({data, itemImageClicked}) => {
     const[currentIndex, setCurrentIndex] = useState(0);
-    const itemImageClicked = (id) =>{
-        console.log(id);
-    }
+
     const galleryButtonClick = (scrollSide) =>{
         if(scrollSide === 'left'){
             setCurrentIndex((currentIndex) => {
@@ -27,7 +25,7 @@ const PhotoGalleryInAboutPage = ({data}) => {
             return data.slice(currentIndex, 6);
         }
         if (data.slice(currentIndex).length >= 6){
-            return data.slice(currentIndex).slice(0, 6);
+            return data.slice(currentIndex, currentIndex + 6);
         }
         else if(data.slice(currentIndex).length < 6){
             setCurrentIndex(data.length - 6);

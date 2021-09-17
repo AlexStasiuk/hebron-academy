@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './about-us.css';
 
@@ -22,6 +22,7 @@ import Gallery6Image from './gallery6.png';
 
 
 import AboutUsHeaderImage from './about-us-header-img.png';
+import PopUpPhotoGalleryInAboutUs from '../pop-up-photo-gallery-in-about-us';
 const hebronCommand = [
     {id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
     {id:2, name: 'Орест Яцкуляк', position: 'Заступник директора по навчально виховній роботі.', img: Person2Image},
@@ -48,6 +49,17 @@ const fqaData = [
     {id: 6, question: 'Як долучитись до розвитку проекту?', answer: 'jfjf'}
 ];
 const AboutUs = () =>{
+    const [popUpGallery, setPopUpGallery] = useState(false);
+    const [idForPopUpGallery, setIdForPopUpGalery] = useState(0);
+    const itemImageClicked = (id) =>{
+        console.log('about us: itemimage clicked', id);
+        setPopUpGallery(true);
+        setIdForPopUpGalery(id);
+    }
+    const closePopUpClicked = () => {
+        setPopUpGallery((value) =>!value);
+    }
+    const isPopUp = popUpGallery ? <PopUpPhotoGalleryInAboutUs images={gallaryData} itemClickedId={idForPopUpGallery} onClick={closePopUpClicked}/> : null;
     return(
         <div className='about-us-wrapper'>
             <div className='first-block-wrapper row no-gutters'>
@@ -147,8 +159,9 @@ const AboutUs = () =>{
                 <div className='col-2'></div>
             </div>
             <HebronCommandInAboutUsPage data={hebronCommand}/>
-            <PhotoGalleryInAboutPage data={gallaryData}/>
+            <PhotoGalleryInAboutPage data={gallaryData} itemImageClicked={itemImageClicked}/>
             <FQAInAboutUs data={fqaData}/>
+            {isPopUp}
         </div>
     );
 }
