@@ -25,11 +25,11 @@ const PopUpPhotoGalleryInAboutUs = ({images, onClick, itemClickedId}) => {
                 <div className='submit-popup-menu'>
                     <img src={images[currentId - 1]['img']} alt=''/>
                 </div>
-                <div className='pop-up-gallery-left photo-gallary-button'
+                <div className='pop-up-gallery-left photo-gallary-button-pop-up'
                     onClick={() => nextImage('left')}>
                     <LeftScrollHebronCommand className='pop-up-gallery-svg'/>
                 </div>
-                <div className='pop-up-gallery-right photo-gallary-button'
+                <div className='pop-up-gallery-right photo-gallary-button-pop-up'
                     onClick={() => nextImage('right')}>
                     <RightScrollHebronCommand className='pop-up-gallery-svg'/>
                 </div>
