@@ -2,7 +2,7 @@ import React from 'react';
 
 import './about-us.css';
 
-//import HebronCommandInAboutUsPage from '../hebron-command-in-about-us-page';
+import HebronCommandInAboutUsPage from '../hebron-command-in-about-us-page';
 import FQAInAboutUs from '../FQA-in-about-us';
 
 import {ReactComponent as MissionLogo} from './Місія.svg';
@@ -14,12 +14,12 @@ import Person2Image from './Person2.png';
 import Person3Image from './Person3.png';
 
 import AboutUsHeaderImage from './about-us-header-img.png';
-//const hebronCommand = [
-    //{id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
-    //{id:2, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person2Image},
-    //{id:3, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person3Image},
-    //{id:4, name: 'test', position: 'test', img: Person2Image}
-//];
+const hebronCommand = [
+    {id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
+    {id:2, name: 'Орест Яцкуляк', position: 'Заступник директора по навчально виховній роботі.', img: Person2Image},
+    {id:3, name: 'Валентина Юсуфенко', position: 'Заступниця директора з А-Г роботі', img: Person3Image},
+    {id:4, name: 'test', position: 'test', img: Person2Image}
+];
 const fqaData = [
     {id: 1, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
     {id: 2, question: 'Хто може навчатись в Хеврон IT Академії?', answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.'},
@@ -127,7 +127,7 @@ const AboutUs = () =>{
                 </div>
                 <div className='col-2'></div>
             </div>
-            
+            <HebronCommandInAboutUsPage data={hebronCommand}/>
             <FQAInAboutUs data={fqaData}/>
         </div>
     );

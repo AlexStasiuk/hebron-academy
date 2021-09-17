@@ -1,7 +1,7 @@
 .FQA-wrapper{
     height: 400px;
 }
-.hebron-command-info-wrapper{
+.hebron-fqa-info-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

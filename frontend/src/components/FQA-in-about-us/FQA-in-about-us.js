@@ -18,7 +18,7 @@ const FQAInAboutUs = ({data}) =>{
     const onLiClick = (id) => {
         const oldItem = items[id - 1];
         const value = !oldItem['showAnswer'];
-        const newItem = {...items[id - 1], ['showAnswer']: value};
+        const newItem = {...items[id - 1], 'showAnswer': value};
         const before = items.slice(0, id - 1);
         const after = items.slice(id);
         setItems([...before, newItem, ...after]);
@@ -44,7 +44,7 @@ const FQAInAboutUs = ({data}) =>{
         
         <div className='row no-gutters FQA-wrapper'>
             <div className='col-2'></div>
-            <div className='col-8 hebron-command-info-wrapper'>
+            <div className='col-8 hebron-fqa-info-wrapper'>
                 <ul className='list-unstyled fqa-ul-style'>
                     {renderQuestions(items.slice(0,3))}
                 </ul>
