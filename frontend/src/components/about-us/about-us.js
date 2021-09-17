@@ -19,10 +19,12 @@ import Gallery3Image from './gallery3.png';
 import Gallery4Image from './gallery4.png';
 import Gallery5Image from './gallery5.png';
 import Gallery6Image from './gallery6.png';
+import ReviewerPerson1 from './reviewerPhoto1.png';
 
 
 import AboutUsHeaderImage from './about-us-header-img.png';
 import PopUpPhotoGalleryInAboutUs from '../pop-up-photo-gallery-in-about-us';
+import ReviewsForAboutUs from '../reviews-for-about-us';
 const hebronCommand = [
     {id:1, name: 'Ігор Була', position: 'Засновник та виконавчий директор.', img: Person1Image},
     {id:2, name: 'Орест Яцкуляк', position: 'Заступник директора по навчально виховній роботі.', img: Person2Image},
@@ -48,6 +50,13 @@ const fqaData = [
     {id: 5, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
     {id: 6, question: 'Як долучитись до розвитку проекту?', answer: 'jfjf'}
 ];
+const dataForReviews = [
+    {id: 1, quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', name: 'Ник Вуйчич', img: ReviewerPerson1},
+    {id: 2, quote: 'Lorem ididuiquipvolu', img: Person1Image, name: 'o'},
+    {id: 3, quote: 'Lorem ididuiquipvolu33', img: Person1Image, name: 'o'},
+    {id: 4, quote: 'Lorem ididuiquipvolu334', img: Person1Image, name: 'o'}
+]
+
 const AboutUs = () =>{
     const [popUpGallery, setPopUpGallery] = useState(false);
     const [idForPopUpGallery, setIdForPopUpGalery] = useState(0);
@@ -160,6 +169,10 @@ const AboutUs = () =>{
             </div>
             <HebronCommandInAboutUsPage data={hebronCommand}/>
             <PhotoGalleryInAboutPage data={gallaryData} itemImageClicked={itemImageClicked}/>
+            <div className='title-block-for-about-us-page row no-gutters'>
+                Відгуки
+            </div>
+            <ReviewsForAboutUs data={dataForReviews} id={1}/>
             <FQAInAboutUs data={fqaData}/>
             {isPopUp}
         </div>
