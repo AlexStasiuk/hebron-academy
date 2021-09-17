@@ -4,6 +4,7 @@ import './about-us.css';
 
 import HebronCommandInAboutUsPage from '../hebron-command-in-about-us-page';
 import FQAInAboutUs from '../FQA-in-about-us';
+import PhotoGalleryInAboutPage from '../photo-gallery-in-about-us-page';
 
 import {ReactComponent as MissionLogo} from './Місія.svg';
 import {ReactComponent as VisionLogo} from './Бачення.svg';
@@ -12,6 +13,13 @@ import {ReactComponent as GoalLogo} from './Ціль.svg';
 import Person1Image from './Person1.png';
 import Person2Image from './Person2.png';
 import Person3Image from './Person3.png';
+import Gallery1Image from './gallery1.png';
+import Gallery2Image from './gallery2.png';
+import Gallery3Image from './gallery3.png';
+import Gallery4Image from './gallery4.png';
+import Gallery5Image from './gallery5.png';
+import Gallery6Image from './gallery6.png';
+
 
 import AboutUsHeaderImage from './about-us-header-img.png';
 const hebronCommand = [
@@ -20,6 +28,17 @@ const hebronCommand = [
     {id:3, name: 'Валентина Юсуфенко', position: 'Заступниця директора з А-Г роботі', img: Person3Image},
     {id:4, name: 'test', position: 'test', img: Person2Image}
 ];
+const gallaryData = [
+    {id: 1, img: Gallery1Image},
+    {id: 2, img: Gallery2Image},
+    {id: 3, img: Gallery3Image},
+    {id: 4, img: Gallery4Image},
+    {id: 5, img: Gallery5Image},
+    {id: 6, img: Gallery6Image},
+    {id: 7, img: Gallery3Image},
+    {id: 8, img: Gallery4Image},
+    {id: 9, img: Gallery5Image},
+]
 const fqaData = [
     {id: 1, question: 'Що таке Хеврон IT Академія?', answer: 'jfjf'},
     {id: 2, question: 'Хто може навчатись в Хеврон IT Академії?', answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.'},
@@ -128,6 +147,7 @@ const AboutUs = () =>{
                 <div className='col-2'></div>
             </div>
             <HebronCommandInAboutUsPage data={hebronCommand}/>
+            <PhotoGalleryInAboutPage data={gallaryData}/>
             <FQAInAboutUs data={fqaData}/>
         </div>
     );
