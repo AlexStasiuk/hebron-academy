@@ -5,6 +5,7 @@ import {ReactComponent as MediaSupportLogo} from './Медіа підтримк�
 import {ReactComponent as FinanceSupportLogo} from './фінансова підтримка.svg';
 import {ReactComponent as PersonalizedMentorshipLogo} from './Особисте наставництво.svg';
 import {ReactComponent as MentorshipAndVoluntaryLogo} from './менторство та волентерство.svg';
+import HebronNeedsJoinPageSecondButton from '../hebron-needs-join-page-second-button';
 
 
 const buttonItems = [
@@ -25,6 +26,9 @@ const HebronNeedsJoinPage = () =>{
     const RenderContent = () => {
         let result = null;
         switch(clickeItemId){
+            case 2:
+            result = (<HebronNeedsJoinPageSecondButton />);
+            break;
             case 3:
             result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);
             break;
