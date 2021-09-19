@@ -16,7 +16,16 @@ const buttonItems = [
     {id: 5, img: <GiveUnnecessaryThingsLogo className='hebron-needs-logo'/>, imgSelected: <GiveUnnecessaryThingsLogo className='hebron-needs-logo-selected'/>, title: 'Віддай непотрібні речі'},
 ];
 
-
+const forthButtonContent = (<div>
+    <div className='hebron-needs-join-page-forth-button-wrapper'>
+        <span className='title'>
+            Розкажіть про нас
+        </span>
+        <span className='content'>
+            Розкажіть про Хеврон ІТ Академію своїм друзям! Ми будуємо мережу небайдужих людей, які готові разом з нами створити нове покоління свідомої, активної та працездатної молоді!
+        </span>
+    </div>
+</div>);
 const HebronNeedsJoinPage = () =>{
     const [clickeItemId, setClickedItemId] = useState(0);
     const ClickOnItem = (id) => {
@@ -31,6 +40,9 @@ const HebronNeedsJoinPage = () =>{
             break;
             case 3:
             result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);
+            break;
+            case 4:
+            result = forthButtonContent;
             break;
             case 5:
             result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);

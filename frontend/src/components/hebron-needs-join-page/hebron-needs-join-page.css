@@ -84,3 +84,17 @@
     color: black;
     line-height: 1;
 }
+.hebron-needs-join-page-forth-button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.hebron-needs-join-page-forth-button-wrapper .title{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.hebron-needs-join-page-forth-button-wrapper .content{
+    margin-top: 5px;
+    width: 50%;
+    font-size: 13px;
+}
