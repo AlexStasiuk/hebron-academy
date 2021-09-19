@@ -22,6 +22,21 @@ const HebronNeedsJoinPage = () =>{
         console.log(id);
         setClickedItemId(id);
     }
+    const RenderContent = () => {
+        let result = null;
+        switch(clickeItemId){
+            case 3:
+            result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);
+            break;
+            case 5:
+            result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);
+            break;
+            default:
+            result = null;
+            break;
+        }
+        return result;
+    }
     const RenderButtons = () => {
         return buttonItems.map((item) => {
             const isFirstStyle = item.id === 1 ? 'hebron-needs-button-first-wrapper' : 'hebron-needs-button-wrapper';
@@ -54,7 +69,7 @@ const HebronNeedsJoinPage = () =>{
                     {RenderButtons()}
                 </ul>
                 <div className='hebron-needs-button-content-wrapper'>
-
+                    {RenderContent()}
                 </div>
             </div>
         </div>
