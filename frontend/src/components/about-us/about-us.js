@@ -6,9 +6,9 @@ import HebronCommandInAboutUsPage from '../hebron-command-in-about-us-page';
 import FQAInAboutUs from '../FQA-in-about-us';
 import PhotoGalleryInAboutPage from '../photo-gallery-in-about-us-page';
 
-import {ReactComponent as MissionLogo} from './Місія.svg';
-import {ReactComponent as VisionLogo} from './Бачення.svg';
-import {ReactComponent as GoalLogo} from './Ціль.svg';
+import {ReactComponent as MissionLogo} from './Mission.svg';
+import {ReactComponent as VisionLogo} from './Vision.svg';
+import {ReactComponent as GoalLogo} from './Goal.svg';
 
 import Person1Image from './Person1.png';
 import Person2Image from './Person2.png';
@@ -93,7 +93,7 @@ const AboutUs = () =>{
                     </div>
                     
                 </div>
-                <span className='about-us-header-title'>ПРО НАС</span>
+                <span className='about-us-header-title'><b>ПРО НАС</b></span>
 
             </div>
             <div className='second-block-wrapper row no-gutters'>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './hebron-needs-join-page.css';
-import {ReactComponent as GiveUnnecessaryThingsLogo} from './Віддай непотрібні речі.svg';
-import {ReactComponent as MediaSupportLogo} from './Медіа підтримка.svg';
-import {ReactComponent as FinanceSupportLogo} from './фінансова підтримка.svg';
-import {ReactComponent as PersonalizedMentorshipLogo} from './Особисте наставництво.svg';
-import {ReactComponent as MentorshipAndVoluntaryLogo} from './менторство та волентерство.svg';
+import {ReactComponent as GiveUnnecessaryThingsLogo} from './GiveMeUselessThings.svg';
+import {ReactComponent as MediaSupportLogo} from './MediaSupportLogo.svg';
+import {ReactComponent as FinanceSupportLogo} from './GiveMeUselessThings.svg';
+import {ReactComponent as PersonalizedMentorshipLogo} from './PersonalMentorship.svg';
+import {ReactComponent as MentorshipAndVoluntaryLogo} from './MentorshipAndVoluntary.svg';
 import HebronNeedsJoinPageSecondButton from '../hebron-needs-join-page-second-button';
-
+import HebronNeedsJoinPageFirstButton from '../hebron-needs-join-page-first-button';
 
 const buttonItems = [
     {id: 1, img: <FinanceSupportLogo className='hebron-needs-logo'/>, imgSelected: <FinanceSupportLogo className='hebron-needs-logo-selected'/> , title: 'Фінансова підтримка організації'},
@@ -26,6 +26,7 @@ const forthButtonContent = (<div>
         </span>
     </div>
 </div>);
+
 const HebronNeedsJoinPage = () =>{
     const [clickeItemId, setClickedItemId] = useState(0);
     const ClickOnItem = (id) => {
@@ -35,9 +36,12 @@ const HebronNeedsJoinPage = () =>{
     const RenderContent = () => {
         let result = null;
         switch(clickeItemId){
+            case 1:
+            result = (<HebronNeedsJoinPageFirstButton />);
+            break;
             case 2:
             result = (<HebronNeedsJoinPageSecondButton />);
-            break;
+            break; 
             case 3:
             result = (<span>{buttonItems[clickeItemId - 1]['title']}</span>);
             break;
