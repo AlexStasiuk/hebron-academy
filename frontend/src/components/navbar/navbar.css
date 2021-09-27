@@ -1,0 +1,32 @@
+.navbar-wrapper{
+    
+    background-color: orange;
+    position: fixed;
+    top:0px;
+    height: 10vh;
+    
+}
+
+.logo-in-navbar-wrapper{
+    width: 100%;
+    height: 100%;
+    color:black;
+
+}
+.logo-in-navbar-link-wrapper{
+    text-decoration: none;
+}
+.logo-in-navbar-link-wrapper:hover{
+    text-decoration: none;
+}
+.ul-navbar{
+    display:flex;
+    flex-direction: row;
+}
+.li-selected-navbar{
+    color: orange;
+    
+}
+.li-not-selected-navbar{
+    color:black;
+}
