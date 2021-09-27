@@ -7,16 +7,18 @@ import HebronNeedsJoinPage from '../hebron-needs-join-page';
 import AboutUs from '../about-us';
 import Error from '../error';
 import News from '../news';
-import './app.css';
 import Join from '../join';
 import Learn from '../learn';
 import Donations from '../donations';
 import HebronOneHundred from '../hebron100';
+import Navbar from '../navbar';
+
+import './app.css';
 
 const App = () => {
     return (
         <BrowserRouter>
-        
+            
             <Switch>
                 <Route path='/news/'>
                     <News/>
@@ -46,6 +48,7 @@ const App = () => {
                     <Error/>
                 </Route>
             </Switch>
+            <Navbar/>
             <Footer/>
         </BrowserRouter>
     );

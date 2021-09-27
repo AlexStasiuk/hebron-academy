@@ -22,7 +22,7 @@ export default function PaymentMenu(props){
                 </div>
                 <div className="Payment-images">
                     { props.time %2 === 0 ? <img src={PaymentImg} alt ='PaymentPhoto' className="Payment-image"/> 
-                            :<img src={PaymentImg2} className="Payment-image2"/>} 
+                            :<img src={PaymentImg2} className="Payment-image2" alt=''/>} 
                     
                 </div>
         </div>

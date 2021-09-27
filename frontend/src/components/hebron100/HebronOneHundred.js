@@ -1,5 +1,5 @@
 import './HebronOneHundred.css';
-import React, {Component} from 'react';
+import React from 'react';
 import Header from './Header/Header';
 import card1 from './img/card1.png';
 import card2 from './img/card2.png';
