@@ -12,14 +12,25 @@ import './app.css';
 const App = () => {
     return (
         <BrowserRouter>
+        
             <Switch>
                 <Route path='/news/'>
                     <News/>
                 </Route>
-                <Route path='/'>
+                <Route exact path='/'>
                     <MainPage/>
                 </Route>
+                <Route path='/about-us/'>
+                    <AboutUs/>
+                </Route>
+                <Route path='hebron-needs-join-page/'>
+                    <HebronNeedsJoinPage/>
+                </Route>
+                <Route path='*'>
+                    <Error/>
+                </Route>
             </Switch>
+            <Footer/>
         </BrowserRouter>
     );
 }
