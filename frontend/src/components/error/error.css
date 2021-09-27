@@ -1,0 +1,43 @@
+.errors{
+    display: flex;
+    flex-direction: row;
+    background-color: #3A5549;
+    height: 948px;
+}
+
+.logo-frame{
+   margin-left: 70px;
+}
+
+.centr-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 319px;
+    margin-left: 200px;
+}
+
+.text-error{
+    margin-top: 20px;
+}
+
+.centr-block h1{
+    color: white;
+}
+
+.centr-block h4{
+    color: white;
+}
+
+.error-btn{
+    background-color:rgba(253, 120, 35, 1);
+    color: white;
+    width: 200px;
+    height: 45px;
+    border: none;
+    margin-top: 49px;
+    margin-left: 80px;
+}
+
+.logo-frame2{
+    margin-top: 450px;
+}
