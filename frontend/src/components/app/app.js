@@ -8,6 +8,7 @@ import AboutUs from '../about-us';
 import Error from '../error';
 import News from '../news';
 import './app.css';
+import Join from '../join';
 
 const App = () => {
     return (
@@ -23,8 +24,11 @@ const App = () => {
                 <Route path='/about-us/'>
                     <AboutUs/>
                 </Route>
-                <Route path='hebron-needs-join-page/'>
+                <Route path='/hebron-needs-join-page/'>
                     <HebronNeedsJoinPage/>
+                </Route>
+                <Route path='/join/'>
+                    <Join/>
                 </Route>
                 <Route path='*'>
                     <Error/>
