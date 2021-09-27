@@ -30,6 +30,7 @@ const MainPageJoinHebron = (props) =>{
                         <span>Хеврону вже СЬОГОДНІ!</span>
                     </div>
                     <form
+                        method="POST"
                         className='form-style'
                         onSubmit={sendData}>
                         <span>П.І.Б</span>
