@@ -10,6 +10,7 @@ import News from '../news';
 import './app.css';
 import Join from '../join';
 import Learn from '../learn';
+import Donations from '../donations';
 
 const App = () => {
     return (
@@ -33,6 +34,9 @@ const App = () => {
                 </Route>
                 <Route path='/education/'>
                     <Learn />
+                </Route>
+                <Route path='/donations/'>
+                    <Donations/>
                 </Route>
                 <Route path='*'>
                     <Error/>

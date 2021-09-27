@@ -1,0 +1,120 @@
+.donation{
+    display: flex;
+    flex-direction: column;
+}
+
+.laptop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 785px;
+}
+
+.laptop img{
+   width: 772px;
+   height: 623px;
+   margin-left: 40px;
+   margin-top: 75px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 934px;
+    height: 190px;
+    background-color: rgba(253, 120, 35, 1);
+    margin-left: 150px;
+    margin-top: 75px;
+}
+
+.text img{
+    width: 596px;
+    height: 220px;
+    position: relative;
+    margin-top:0;
+}
+
+
+.li-a{
+    width: 13px;
+    height: 12px;
+    background-color:rgba(253, 120, 35, 1) ;
+    display: flex;  
+}
+
+.text-a{
+    margin-top: 42px;
+    width: 420px;
+    height: 96px;
+}
+
+.li-b{
+    width: 13px;
+    height: 12px;
+    background-color:rgba(253, 120, 35, 1) ;
+}
+
+.text-b{
+    margin-top: 88px;
+    margin-left: 375px;
+    width: 420px;
+    height: 96px;
+}
+
+.text-a p{
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-b p{
+    display: flex;
+    align-items: flex-start; 
+}
+
+
+
+
+.contacts{
+    background-color: rgba(240, 240, 240, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 562px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 83px;
+    margin-left: 158px;
+}
+
+.data h4{
+    color: rgba(253, 120, 35, 1);
+}
+
+.form-label{
+    color: grey;
+    margin-top: 29px    ;
+}
+
+.data input{
+    width: 495px;
+}
+
+.data .input:last-child{
+    width: 495px;
+    margin-top: 44px;
+}
+
+.btn-send{
+    background-color:rgba(253, 120, 35, 1);
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-top: 42px;
+    margin-left: 313px;
+}
