@@ -1,0 +1,112 @@
+.map{
+   display: flex;
+   margin-top: 10px;
+   height: 672px;
+   
+}
+
+.map img{
+    position: absolute;
+    width: 1820px;
+    height: 670px;
+}
+
+.place{
+    position: relative;
+    display: flex;
+    top: 98px;
+    left: 1147px;
+}
+
+.place img{
+    width: 54px;
+    height: 54px;
+}
+
+.place h2{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.map-card{
+    display: flex;
+}
+
+.map-card .card{
+    width: 615px;
+    height: 400px;
+    right: 300px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.card-body h4 {
+    color: rgba(253, 120, 35, 1);
+}
+
+.text-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 163px;
+    margin-top: 18px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.logo-network{
+   display: flex;
+   flex-direction: row;
+   margin-top: 22px;
+}
+
+.facebook img{
+    max-width: 20px;
+    max-height: 20px;
+    left: -520px;
+    bottom: 45px;
+}
+
+/* .instagram img{
+    max-width: 40px;
+    max-height: 40px;
+} */
+
+.twitter img{
+    max-width: 20px;
+    max-height: 20px;
+    left: -400px;
+    bottom: 45px;
+}
+
+.twitter p{
+    margin-left: 50px;
+}
+
+.in img{
+    max-width: 20px;
+    max-height: 20px;
+    left: -300px;
+    bottom: 45px;
+}
+
+.in p {
+    margin-left: 50px;
+}
+
+.youtube img{
+    max-width: 30px;
+    max-height: 20px;
+    left: -240px;
+    bottom: 45px;
+}
+
+.youtube p{
+    margin-left: 50px;
+}
+
