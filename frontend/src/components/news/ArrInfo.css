@@ -1,0 +1,48 @@
+.card-container{
+    width: 40%;
+}
+
+.news-img img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 67px;
+    margin-left: 200px;
+    width: 622px;
+    height: 361px;
+}
+
+.img-info{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.block-link{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 50px;
+}
+
+.block-link img{
+    margin-left: 10px;
+}
+
+.a-btn{
+    background-color: white;
+    color: rgba(253, 120, 35, 1);
+    border: none;
+    margin-left: 150px;
+   
+}
+
+.b-btn{
+    margin-left: 280px;
+    background-color: white;
+    color: rgba(253, 120, 35, 1);
+    border: none;
+}
