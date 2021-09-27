@@ -10,7 +10,7 @@
     font-family:'Montserrat', sans-serif;
 
 }
-.main-content{
+.main-content-on-footer{
     width:100%;
     background-color: #373640;
     height: 85%;
@@ -34,24 +34,24 @@
 padding-left: 0;
 padding-right: 0;
 }
-.logo{
+.logo-footer{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.logo img{
+.logo-footer img{
     width:80%;
 }
 
-.contact-info-wrapper{
+.contact-info-wrapper-footer{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
 }
-.contact-info{
+.contact-info-footer{
     font-size:10px;
     display: flex;
     flex-direction: column;
@@ -59,34 +59,34 @@ padding-right: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.contact-info .light-text{
+.contact-info-footer .light-text-footer{
     opacity: 60%;
 }
 
-.credentials{
+.credentials-footer{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-.credentials .text{
+.credentials-footer .text-footer{
     display: flex;
     flex-direction: column;
     font-size: 10px;
 }
-.credentials .text .first-block{
+.credentials-footer .text-footer .first-block-footer{
     opacity: 60%;
 }
 
-.images-block{
+.images-block-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width:28%;
 }
 
-.support-button{
+.support-button-footer{
     background-color: orange;
     color: white;
     height: 10%;
