@@ -11,6 +11,7 @@ import './app.css';
 import Join from '../join';
 import Learn from '../learn';
 import Donations from '../donations';
+import HebronOneHundred from '../hebron100';
 
 const App = () => {
     return (
@@ -37,6 +38,9 @@ const App = () => {
                 </Route>
                 <Route path='/donations/'>
                     <Donations/>
+                </Route>
+                <Route path='/hebron100/'>
+                    <HebronOneHundred/>
                 </Route>
                 <Route path='*'>
                     <Error/>
