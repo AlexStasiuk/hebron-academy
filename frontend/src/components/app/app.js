@@ -9,6 +9,7 @@ import Error from '../error';
 import News from '../news';
 import './app.css';
 import Join from '../join';
+import Learn from '../learn';
 
 const App = () => {
     return (
@@ -29,6 +30,9 @@ const App = () => {
                 </Route>
                 <Route path='/join/'>
                     <Join/>
+                </Route>
+                <Route path='/education/'>
+                    <Learn />
                 </Route>
                 <Route path='*'>
                     <Error/>
