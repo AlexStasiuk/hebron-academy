@@ -1,5 +1,5 @@
 .hebron-needs-buttons-wrapper{
-    height: 500px;
+    height: 600px;
    
 }
 .hebron-needs-buttons-main-info-wrapper{
@@ -10,7 +10,6 @@
 .hebron-needs-buttons-itself-wrapper{
     height: 100%;
     width: 40%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
 
@@ -18,7 +17,6 @@
 .hebron-needs-button-content-wrapper{
     height: 100%;
     width:55%;
-    background-color: brown;
 }
 .hebron-needs-button-wrapper{
     border-width: 0px;
