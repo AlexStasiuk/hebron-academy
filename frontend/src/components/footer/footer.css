@@ -8,6 +8,7 @@
     width: 100%;
     height: 150px;
     font-family:'Montserrat', sans-serif;
+    z-index: 99;
 
 }
 .main-content-on-footer{

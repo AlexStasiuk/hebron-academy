@@ -18,7 +18,7 @@ import './app.css';
 const App = () => {
     return (
         <BrowserRouter>
-            
+            <Navbar/>
             <Switch>
                 <Route path='/news/'>
                     <News/>
@@ -44,11 +44,14 @@ const App = () => {
                 <Route path='/hebron100/'>
                     <HebronOneHundred/>
                 </Route>
+                <Route path='/credentials/'>
+                    <HebronNeedsJoinPage/>
+                </Route>
                 <Route path='*'>
                     <Error/>
                 </Route>
             </Switch>
-            <Navbar/>
+            
             <Footer/>
         </BrowserRouter>
     );
