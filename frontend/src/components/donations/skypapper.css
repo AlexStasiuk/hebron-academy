@@ -5,14 +5,14 @@
 }
 
 .skypappers img{
-    width: 495px;
-    height: 523px;
+    width: 60%;
+    height: 50%;
     margin-top: 140px;
-    margin-left: 198px;
+    margin-left: 5%;
 }
 
 .text-c{
-    margin-top: 180px;
+    margin-top: 140px;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,8 @@
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
+    cursor: default;
 }
 
 .logo-a-p{
@@ -82,6 +83,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    cursor: default;
 }
 
 .logo-b-p{
@@ -102,11 +104,13 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 12px;
 }
 
 .text-logo-b{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 3%;
+    font-size: 12px;
 }

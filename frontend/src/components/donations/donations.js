@@ -3,10 +3,9 @@ import Laptop from'./laptop.png';
 import Donation from './donations.png';
 import './donations.css';
 import Paint from './paint.png';
-import iPhone from './iphone.png';
 import { Maps } from '../map/map';
 import { Skypapper } from './skypapper';
-
+import Contacts  from '../contacts';
 
 const Donations = () => {
 
@@ -32,23 +31,11 @@ const Donations = () => {
                     </div>
             </div>
         </div>
-        <div>
+        <div className='paint'>
             <img src={Paint} alt=''/>
         </div>
         <Skypapper/>
-        <div className='contacts'>
-            <div className='data'>
-                <h4>ПРИЄДНУЙТЕСЬ</h4>
-                <h2>Залиште свої контакти і ми</h2>
-                <h2>передзвонимо вам!</h2>
-                    <label for="validationDefault01" className="form-label">ПІБ:</label>
-                    <input className='form-control'/>
-                    <label for="validationDefault02" className="form-label">Номер телефону:</label>
-                    <input className='form-control'/>
-                <button className='btn-send'>Надіслати</button>
-            </div>
-            <img src={iPhone} alt=''/>
-        </div>  
+        <Contacts/>
         <Maps/>
     </div>
     )

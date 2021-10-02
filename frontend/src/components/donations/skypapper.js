@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './skypapper.css';
 import Sky from './sky.png';
-import {ReactComponent as CompanyLogo} from './компанія.svg';
-import {ReactComponent as VoluntaryLogo} from './Волонтер.svg';
+import {ReactComponent as CompanyLogo} from './SkyscraperLogo.svg';
+import {ReactComponent as VoluntaryLogo} from './VolonterLogo.svg';
 
 
 export const Skypapper = () =>{
@@ -54,20 +54,20 @@ let onClick1 = (parameter) => {
             <img src={Sky} alt=''/>
             <div className='text-c'>
                 <h4>ХТО ВИ?</h4>
-                <h1>Необхідні потреби Хеврону</h1>
+                <h3>Необхідні потреби Хеврону</h3>
                 <div className='text-c-img'>
                     <div className = 'img'>
                         <div className='logo-a' onClick={()=>onClick1('TextLogoA')}>
                             <VoluntaryLogo className='logo-svg'/>
                             <div className='logo-a-p'>
-                                <p>01---</p><h3>ВОЛОНТЕР</h3>
+                                <p>01---</p><h4>ВОЛОНТЕР</h4>
                                 
                             </div>
                         </div>
                         <div className='logo-b' onClick={()=>onClick1('TextLogoB')}>
                                 <CompanyLogo className='logo-svg'/>
                             <div className='logo-b-p'>
-                                02---<h3>КОМПАНІЯ</h3>
+                                02---<h4>КОМПАНІЯ</h4>
                             </div>
                         </div>
                     </div>

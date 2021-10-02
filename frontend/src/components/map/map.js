@@ -10,7 +10,7 @@ import Youtube from './youtube.png';
 
 export const Maps = () => {
     return(
-        <div className='map'>   
+        <div className='map col-12'>   
             <img src={Maping} alt=''/>
                 <div className='place'>
                     <img src={Placeholder} alt=''/>
@@ -21,7 +21,7 @@ export const Maps = () => {
                     <div class="card">
                         <div class="card-body">
                             <h4>КОНТАКТИ</h4>
-                            <h1 >Як нас знайти?</h1>
+                            <h3 >Як нас знайти?</h3>
                             <div className='text-card'>
                                 <p>Адреса:  79491, Львів-Брюховичі, вул. Бірківська, 11</p>
                                 <p>E-mail:  itacademyfororphans@gmail.com</p>

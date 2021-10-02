@@ -10,13 +10,13 @@
 
 .group-img{
     margin-left: 6px;
-    width: 792px;
-    height: 639px;
 }
 
 .group-img img{
     position: relative;
     display: flex;
+    width: 65%;
+    height: auto;
     margin-right: 996px;
 }
 
@@ -27,27 +27,28 @@
     position: relative;
     top: 37px;
     right: 165px;
-    width: 1000px;
-    height: 100px;
-    margin-left: 180px;
+    width: 100%;
+    height: 70px;
+    margin-left: -30%;
 }
 
 
 
 .join-img-join img{
     position: relative;
-    width: 911;
-    height: 110;
-    right: 130px;
+    width: 75%;
+    height: auto;
+    right: 8%;
+    top: 10%;
 }
 
 
 .orange-block-a{
     position: absolute;
-    width: 705px;
-    height: 537px;
+    width: 30%;
+    height: 78%;
     background-color: rgba(253, 120, 35, 1);
-    top: 222px;
+    top: 3%;
     left: 0;
 }
 
@@ -55,19 +56,25 @@
 .join_us-img{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-left: 413px;
+    margin-top: 5%;
+    margin-left: 70%;
+}
+
+.join_us-img img{
+    width: 100%;
+    height: auto;
 }
 
 .join-img-text-a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top:84px;
-    margin-left: 423px;
+    margin-top:10%;
+    margin-left: 50%;
+    font-size:60%;
 }
 
-.join-img-text-a h2{
+.join-img-text-a h4{
     color: rgba(253, 120, 35, 1);
 }
 
@@ -82,27 +89,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 314px; 
-    margin-left: 150px;   
+    margin-top: 10%; 
+    margin-left: 10%; 
+    font-size: 70%;  
 }
 
 .hands-img img{
     position: relative;
-    margin-top: 100px;
-    margin-left: 240px;
-    width: 894px;
-    height: 569px;
+    margin-left: 20%;
+    width: 84%;
+    height: auto;
 }
 
 .orange-block-b{
     position: absolute;
-    width: 705px;
-    height: 537px;
+    width: 30%;
+    height: 50%;
     background-color: rgba(253, 120, 35, 1);
-    margin-top: 80px;
-    margin-right: 10px;
+    margin-top: -2%;
     right: 0;
-    
+
 }
 
 .join-img-d{
@@ -110,9 +116,15 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.join-img-people{
+    margin-left: 10%;
+}
+
 .join-img-people img{
-    width: 905px;
-    height: 550px;
+    width: 80%;
+    height: 100%;
+    right: 10%;
 }
 
 .join-text-d{
@@ -120,8 +132,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 10px    ;
+    margin-left: 10%;
+    font-size: 80%;
 }
 
 .join-text-d h4{
@@ -135,8 +148,8 @@
 }
 
 .join-img-item img{
-    width: 905px;
-    height: 550px;
+    width: 80%;
+    height: 70%;
 }
 
 .join-text-i{
