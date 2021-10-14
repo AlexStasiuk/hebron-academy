@@ -8,7 +8,7 @@ import { Maps } from '../map/map';
 
 const News = () => {
     return(
-        <div className='new'>
+        <div className='new col-12'>
             <div className='new-img'>
                 <img src={New} alt=''/>
             </div>
@@ -28,4 +28,5 @@ const News = () => {
         </div>
     )
 }
+
 export default News;

@@ -15,18 +15,17 @@ const Join = () => {
         <div className='join'>
             <div className='join-img-a'>
                 <div className='group-img'>
-                <div className='orange-block-a'></div>
-                    <img src={Group} alt=''/>
-                    
-                </div>
+                    <div className='orange-block-a'></div>
+                        <img src={Group} alt=''/>
+                    </div>
                 <div className='joins-img'>
                     <div className='join-img-join'>
                         <div className='block-join'></div>
                         <img src={Joins} alt=''/>
                     </div>
                     <div className='join-img-text-a'>
-                        <h1>Як приєднатися до</h1>
-                        <h2>Хеврон ІТ Академії?</h2>
+                        <h3>Як приєднатися до</h3>
+                        <h4>Хеврон ІТ Академії?</h4>
                         <p>Хеврон ІТ Академія існує завдяки добровільним пожертвам</p>
                         <p>небайдужих людей. Завдяки залученим коштам студенти</p>
                         <p>забезпечені харчуванням, житлом, медичною підтримкою</p>
@@ -60,8 +59,8 @@ const Join = () => {
             <div className='join-img-d'>
                 <div className='join-text-d'>
                     <h4>ПОТРЕБИ</h4>
-                    <h1>На що ми</h1> 
-                    <h1>збираємо зараз?</h1>
+                    <h3>На що ми</h3> 
+                    <h3>збираємо зараз?</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                     <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                     <p>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>

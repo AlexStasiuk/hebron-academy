@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './learn.css';
 import Books from './img/books.png';
 import Stydy from './img/stydy.png';
@@ -8,28 +8,29 @@ import Vector2 from './img/Vector2.png';
 import Vector3 from './img/Vector3.png';
 import Shape from './img/thinking.png';
 import Krest from './img/pray.png';
-import Sport from './img/sport.png';
-import Smile from './img/smile.png';
+import Sport from './img/sport.png';        
 import { Graduate } from './graduate';
 import ArrSuccess from './arrSuccess';
 import { Maps } from '../map/map';
+import Contacts  from '../contacts';
 
 
 
 const Learn = (props) => {
     return(
-        <div className='content'>
-        <div className='learn'>
-                <div className='txt'>
+        <div className='content-learn no-gutters'>
+            <div className='learn-learn row no-gutters'>
+                <div className='col-1'></div>
+                <div className='col-3 txt-learn'>
                     <div className='lr'>
                         <img src={Stydy} alt=''/>
                     </div>
-                    <div className="text-about">
-                        <div className='text-title'>
+                    <div className="text-about-learn">
+                        <div className='text-title-learn'>
                             <h1>ХЕВРОН</h1>
                             <h1>IT Академiя</h1>
                         </div>
-                        <ul className="about-study">
+                        <ul className="about-study-learn">
                             <li><span>24 мiсяця навчання</span></li>
                             <li><span>Студенти зі всієї України</span></li>
                             <li><span>Неформальна освіта для молоді з соціально кризової категорії</span></li>
@@ -41,149 +42,154 @@ const Learn = (props) => {
                         </ul>
                     </div>
                 </div>
-                <div className='books'>
+                <div className='books-learn col-8'>
                     <img src={Books} alt=''/>
                 </div>
-        </div>
-            <div className='work-academy'>
-                <div className='how-academy-works-wrapper'>
-                    <div className='dd'>
-                        <div className='d-a'></div>
-                        <div className='d-b'></div>
-                        
+            </div>
+            <div className='work-academy-learn row no-gutters'>
+                <div className='h-learn'>
+                    <img src={Hebron} alt=''/>
+                </div>
+                
+                <div className='how-academy-works-wrapper-learn '>
+                    <div className='dd-learn'>
+                        <div className='d-a-learn'></div>
+                        <div className='d-b-learn'></div>
                     </div>
-                    <div className='head'>
+                    <div className='head-learn'>
                         <h1>Як Академія Працює?</h1>
                     </div>
                 </div>
                 
-                    <div className='academy'>
-                        <div className='a'>
-                            <div className='a-img'>
-                                <h2><div className='one'>1</div> ВСТУП <img src={Vector} alt=''/></h2>
-                            </div>
-                            <div className='a-p'>
-                           
+                <div className='academy-learn'>
+                    
+                    <div className='a-learn'>
+                        <div className='a-img-learn'>
+                            <div className='one-learn'>1</div> 
+                            <span>ВСТУП</span> 
+                            <img src={Vector} alt=''/>
+                        </div>
+                        <div className='a-p-learn'>
                             <span>Молоді люди групи ризику, які завершили</span>
                             <span>навчання в школі та досягли повноліття,</span>
                             <span>можуть вступити в Академію.</span>
-                            
-
-                            
-                            <span> Ми надаємо</span>
+                            <div className='mt-2'></div>
+                            <span>Ми надаємо</span>
                             <span>їм можливість розвиватись в ІТ галузі.</span>
-                            <span>Прийом документів відкритий впродовж всього року.</span>
-                            </div>
+                            <span>Прийом документів відкритий впродовж</span>
+                            <span>всього року.</span>
                         </div>
-                        <div className='b'>
-                            <div className='b-img'>
-                                <h2><div className='two'>2</div>НАВЧАННЯ<img src={Vector2} alt=''/></h2>
-                            </div>
-                            <div className='b-p'>
-                            
+                    </div>
+                    <div className='a-learn'>
+                        <div className='a-img-learn'>
+                            <div className='one-learn'>2</div>
+                            <span>НАВЧАННЯ</span>
+                            <img src={Vector2} alt=''/>
+                        </div>
+                        <div className='a-p-learn'>
+                        
                             <span>Студент навчається за новітньою</span>
                             <span>24-місячною програмою,</span>
                             <span>розробленою Академією. Дана програма</span>
                             <span>спрямована на тривекторний</span>
                             <span>розвиток: інтелектуальний,</span>
                             <span>фізичний та духовний.</span>
-                            
-                            </div>
+                        
                         </div>
-                        <div className='c'>
-                            <div className='c-img'>
-                                <h2><div className='tree'>3</div>РОБОТА<img src={Vector3} alt=''/></h2>
-                            </div>
-                            <div className='c-p'>
-                            
+                    </div>
+                    <div className='a-learn'>
+                        <div className='a-img-learn'>
+                            <div className='one-learn'>3</div>
+                            <span>РОБОТА</span>
+                            <img src={Vector3} alt=''/>
+                        </div>
+                        <div className='a-p-learn'>
                             <span>Після завершення навчання,</span>
                             <span>студент отримує Сертифікат,</span>
                             <span>який підтверджує компетентність</span>
                             <span>у вибраній галузі на</span>
                             <span>рівні Junior. Ми допомагаємо</span>
                             <span>студентам з подальшим працевлаштуванням.</span>
-                            
-                            </div>
                         </div>
                     </div>
-                <div className='h'>
-                    <img src={Hebron} alt=''/>
-                </div>
-                   
+                </div>   
             </div>
 
-            <div className='development'>
-                <div className='hh'>
-                    <div className='h-a'>
-                        
-                        <h3><span>Тривекторна</span></h3>
-                        <h3><span>програма навчання</span></h3>
-                        <h3><span>Хеврон ІТ Академії</span></h3>
-                        
-                    </div>
-
-                    <div className='h-b'>
-                        
-                        <h4><span>Дана програма включає в себе <b>духовну, інтелектуальну</b> та <b>фізичну</b> складову</span></h4>
-                        <h4><span>розвитку, а також дає змогу молоді виробити нову систему поведінки</span></h4>
-                        <h4> <span>у складних життєвих обставинах.</span></h4>
-                        
-                    </div>
+            
+            <div className='hh-learn row no-gutters'>
+                <div className='h-a-learn col-4'>
+                    <span>Тривекторна</span>
+                    <span>програма навчання</span>
+                    <span>Хеврон ІТ Академії</span>
                 </div>
 
-                <div className='devel'>
-                    <div className='d-a-t'>
-                        <div className='img-a'>
-                            <h4>ІНТЕЛЕКТУАЛЬНИЙ РОЗВИТОК:<img src={Shape} alt=''/></h4>
+                <div className='h-b-learn col-8'>
+                    <span>Дана програма включає в себе <b>духовну, інтелектуальну</b> та <b>фізичну</b> складову</span>
+                    <span>розвитку, а також дає змогу молоді виробити нову систему поведінки</span>
+                    <span>у складних життєвих обставинах.</span>
+                </div>
+            
+            </div>
+                <div className='devel-learn col-12'>
+                    <div className='d-a-t-learn col-3'>
+                        <div className='img-a-learn'>
+                            <span>
+                                <h4>ІНТЕЛЕКТУАЛЬНИЙ</h4>
+                                <h4>РОЗВИТОК:</h4>
+                                <img src={Shape} alt=''/>
+                            </span>
                         </div>
-                        <div className='d-a-p'>
-                        
+                        <div className='d-a-p-learn col-9'>
                             <p>- Основи програмування</p>
-                            <p>- Більше 10-ти мов програмування та сучасних фреймворків</p> 
+                            <p>- Більше 10-ти мов програмування</p>
+                            <p>та сучасних фреймворків</p> 
                             <p>- Англійська мова</p> 
                             <p>- Математика </p>
                             <p>- Історія України</p> 
                             <p>- Правознавство</p>
                             <p>- Ораторське мистецтво</p>
-                        
                         </div>
                     </div>
-                    <div className='d.b'>
-                        <div className='img-b'>
-                            <h4>ДУХОВНИЙ РОЗВИТОК:<img src={Krest} alt=''/></h4>
+                    <div className='d-a-t-learn col-3'>
+                        <div className='img-a'>
+                            <span>
+                                <h4>ДУХОВНИЙ</h4>
+                                <h4>РОЗВИТОК:</h4>
+                                <img src={Krest} alt=''/>
+                            </span>
                         </div>
-                        <div className='d-b-p'>
-
+                        <div className='d-a-p-learn'>
                             <p>- Біблійні читання </p>
                             <p>- Духовне спілкування з наставником</p>
                             <p>- Участь в таборах</p>
-                            <p>- Волонтерство в реабілітаційних центрах</p>
+                            <p>- Волонтерство в реабілітаційних</p> 
+                            <p>центрах</p>
                             <p>та на львівських подіях.</p>
-
-
                         </div>
                     </div>
-                    <div className='d.c'>
-                        <div className='img-c'>
-                          <h4>ФІЗИЧНИЙ РОЗВИТОК:<img src={Sport} alt=''/></h4>
+                    <div className='d-a-t-learn col-3'>
+                        <div className='img-a'>
+                            <span className=''>
+                              <h4>ФІЗИЧНИЙ</h4>
+                              <h4>РОЗВИТОК:</h4>
+                              <img src={Sport} alt=''/>
+                            </span>
                         </div>
-                        <div className='d-c-p'>
-
+                        <div className='d-a-p-learn'>
                             <p>- Легка атлетика</p>
                             <p>- Футбол</p>
                             <p>- Абонемент в Sport Life</p> 
                             <p>- Туризм</p>
-
                         </div>
                     </div>
-                </div>
+                
             </div>
 
-            <div className='success'>
-                <div className='s-h'>
+            <div className='success-learn'>
+                <div className='s-h-learn'>
                     <h1>Історії успіху наших випускників</h1>
                 </div>
-                <div className='s-info'>
+                <div className='s-info-learn'>
                        {ArrSuccess.map( Success => {
                          return(  
                              <div className="col-4">
@@ -192,36 +198,10 @@ const Learn = (props) => {
                        )})}
                 </div>
             </div>
-            <div className='connect'>
-                    <p>ПРИЄДНУЙТЕСЬ</p>
-                    <h3>Твоя історія успіху теж</h3>
-                    <h3>може бути тут!</h3>
-            </div>
-                <div className='card'>
-                        <img src={Smile} alt=''/>
-                        <h1>Заповнюй заявку на вступ!</h1>
-                        <div className='full-name'>
-                            <div>
-                            <label for="validationDefault01" className="form-label">ПІБ:</label>
-                                <input className="form-control search-input"/>
-                            </div>
-                            <div>
-                                <label for="validationDefault02" className="form-label">Номер телефону:</label>
-                                <input className="form-control search-input"/>
-                            </div>
-                            <div>
-                                <label for="validationDefault02" className="form-label">Email:</label>
-                                <input className="form-control search-input"/>
-                            </div>
-                        </div>
-                        <div className='comit'>
-                            <label for="validationDefault02" className="form-label">Коментар:</label>
-                            <textarea className="form-control search-input"/>
-                            <button className='btn'>Надіслати</button>
-                        </div>
-                </div>
+                <Contacts/>
             <Maps/>
         </div>
     ) 
 }
+
 export default Learn;

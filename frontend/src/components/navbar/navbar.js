@@ -43,7 +43,9 @@ const Navbar = () =>{
     return (
         <div className='row no-gutters navbar-wrapper'>
             <div className='col-1'></div>
-            <div className='col-2'>
+            <div className='col-2' 
+            onClick={() => setSelectedPage(0)}
+            >
                 <Link to='/' className='logo-in-navbar-link-wrapper'>
                     <div className='logo-in-navbar-wrapper'>
                         <LogoInHeader/>

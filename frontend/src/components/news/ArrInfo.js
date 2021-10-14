@@ -16,15 +16,13 @@ export const Arrinfo = (props) => {
                 <p>{props.p}</p>
             </div>
             <div className='block-link'>
-            <div className='share'>
-                <Link to={{ pathname:`/Read/${props.id}` , props: props}}><button className='a-btn'>Read more -</button></Link>
-                <Link to={{ pathname:`/share/${props.id}` , props: props}}><button className='b-btn'>Share</button></Link>
-                
+                <div className='share'>
+                    <Link to={{ pathname:`/Read/${props.id}` , props: props}}><button className='a-btn'>Read more -</button></Link>
+                    <Link to={{ pathname:`/share/${props.id}` , props: props}}><button className='b-btn'>Share</button></Link>
                         <img src={Facebook} alt=''/>
                         <img src={Twiter} alt=''/>
-                        <img src={In} alt=''/>
-                
-            </div>
+                        <img src={In} alt=''/>   
+                </div>
             </div>
         </div>
     )
