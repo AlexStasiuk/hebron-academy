@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/desktop/app';
+import MobileApp from './components/mobile/mobileApp';
 
 const isMobile = window.innerWidth <= 500;
 if(!isMobile){
@@ -14,7 +15,7 @@ if(!isMobile){
 else{
   ReactDOM.render(
 
-    <h1>mobileTest</h1>,
+    <MobileApp/>,
       document.getElementById('root')
     );
 }
