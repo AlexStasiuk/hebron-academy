@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/desktop/app';
 import MobileApp from './components/mobile/mobileApp';
+import {isMobile} from 'react-device-detect';
 
-const isMobile = window.innerWidth <= 500;
 if(!isMobile){
 
   ReactDOM.render(
