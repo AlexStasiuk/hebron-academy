@@ -1,0 +1,29 @@
+.orange-squares-in-mobile-logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.orange-square-in-mobile-logo{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: orange;
+}
+.mobile-logo-in-navbar-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.mobile-logo-other-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-left: 4%;
+}
+.mobile-logo-hebron-text{
+    font-size: 4em;
+}
