@@ -5,6 +5,8 @@
   position: sticky;
   top: 0px;
   box-shadow: 0 0 10px rgb(199, 181, 181);
+  z-index: 3;
+  background-color: white;
 }
 .mobile-navbar-logo-and-three-lines-wrapper {
   display: flex;
