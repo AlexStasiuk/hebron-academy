@@ -14,6 +14,7 @@ import { ReactComponent as ContactsLogo } from './contacts.svg';
 import { ReactComponent as CredentialsLogo } from './credentials.svg';
 import MobilePageHebronInfoBlog from '../mobilePageHebronInfoBlog';
 import MobilePageHebronMapInfo from '../mobilePageHebronMapInfo';
+import MobileFormOnMainPage from '../mobileFormOnMainPage';
 
 const MobileMainPage = () => {
     const [currentHeaderPageId, setCurrentHeaderPageId] = useState(1);
@@ -213,6 +214,7 @@ const MobileMainPage = () => {
             <MobilePageHebronInfoBlog
                 dataForBlog={dataForMobilePageInfoBlog[4]}
             />
+            <MobileFormOnMainPage />
         </div>
     );
 };

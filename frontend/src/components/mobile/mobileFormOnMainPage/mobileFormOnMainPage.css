@@ -1,0 +1,81 @@
+.mobile-form-on-main-page-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.mobile-form-on-main-page-preform-content-wrapper {
+    height: 30%;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+.mobile-form-on-main-page-preform-subtitle {
+    font-size: 2rem;
+}
+.mobile-form-on-main-page-preform-title {
+    font-size: 4rem;
+}
+.mobile-form-on-main-page {
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    background-color: white;
+    top: 18%;
+    left: 5%;
+    box-shadow: 0px 10px 10px 0px whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-form-on-main-page img {
+    width: 12%;
+}
+.mobile-form-textarea {
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(244, 244, 244, 1);
+    border-style: none;
+}
+.mobile-form-submit-button {
+    margin-top: 10%;
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+    border-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+.mobile-form-label-wrapper {
+    margin-top: 3vh;
+    width: 100%;
+}
+.mobile-form-label-wrapper span {
+    margin-left: 1vw;
+    color: rosybrown;
+    font-size: 3rem;
+}
+.mobile-form-label-wrapper input {
+    background-color: rgba(244, 244, 244, 1);
+    border-style: none;
+    font-size: 3rem;
+    width: 100%;
+}
+.mobile-form-on-main-page-fill-statement {
+    font-size: 3.5rem;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-form-form-wrapper {
+    width: 100%;
+    background-color: rosybrown;
+}
