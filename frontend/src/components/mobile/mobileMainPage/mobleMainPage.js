@@ -3,12 +3,15 @@ import './mobileMainPage.css';
 
 import HebronBuildingImg from './MobileMainPageHz.png';
 import H1Image from './Rectangle 317.png';
+import H2Image from './Rectangle 337.png';
+import H3Image from './Habron design.png';
 
 import { ReactComponent as MissionLogo } from './Mission.svg';
 import { ReactComponent as VisionLogo } from './vision.svg';
 import { ReactComponent as ContactsLogo } from './contacts.svg';
 import { ReactComponent as CredentialsLogo } from './credentials.svg';
 import MobilePageHebronInfoBlog from '../mobilePageHebronInfoBlog';
+import MobilePageHebronMapInfo from '../mobilePageHebronMapInfo';
 
 const MobileMainPage = () => {
     const [currentHeaderPageId, setCurrentHeaderPageId] = useState(1);
@@ -94,7 +97,39 @@ const MobileMainPage = () => {
                 </span>
             ),
             isButton: true,
-            buttonTitle: 'more info',
+            buttonTitle: 'Детальніше',
+            buttonLink: '/nowhere/',
+        },
+        {
+            category: 'МОЖЛИВІСТЬ',
+            title: 'Студенти Хеврон IT Академії ',
+            text: (
+                <span>
+                     - це молоді люди з числа сиріт та випускників інтернатів,
+                    внутрішньо переміщені особи, діти учасників воїнів АТО, а
+                    також та молодь, яка опинилася у складних життєвих
+                    обставинах. Це хлопці та дівчата, які можуть та хочуть
+                    працювати, розвиватися та приносити користь суспільству.
+                    Все, що їм потрібно, це  дати МОЖЛИВІСТЬ
+                </span>
+            ),
+            isButton: false,
+        },
+        {
+            //specially for map
+            category: 'ПІДТРИМКА',
+            title: 'Ми хочемо зробити більше!',
+            text: (
+                <span>
+                     на сьогоднішній день ми змогли допомогти лише невеликій 
+                    кількості молодих людей, але нашої допомоги потребує значно
+                    більша кількість талановитих хлопців та дівчат по всій
+                    Україні і ми можемо це зробити
+                    <b> З ВАШОЮ ПІДТРИМКОЮ!</b>
+                </span>
+            ),
+            isButton: true,
+            buttonTitle: 'Детальніше',
             buttonLink: '/nowhere/',
         },
     ];
@@ -127,6 +162,23 @@ const MobileMainPage = () => {
             <MobilePageHebronInfoBlog
                 dataForBlog={dataForMobilePageInfoBlog[0]}
             />
+            <div className="hebron-building-image-wrapper">
+                <img src={H2Image} alt="HebronBuilding"></img>
+            </div>
+            <MobilePageHebronInfoBlog
+                dataForBlog={dataForMobilePageInfoBlog[1]}
+            />
+            <div className="hebron-building-image-wrapper">
+                <MobilePageHebronMapInfo
+                    className="position-absolute"
+                    dataForBlog={dataForMobilePageInfoBlog[2]}
+                ></MobilePageHebronMapInfo>
+                <img
+                    src={H3Image}
+                    alt="HebronBuilding mobile-main-page-map"
+                    className="mobile-main-page-hebron-map-image"
+                ></img>
+            </div>
         </div>
     );
 };

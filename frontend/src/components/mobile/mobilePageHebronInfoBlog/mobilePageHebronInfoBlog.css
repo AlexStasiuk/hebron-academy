@@ -1,6 +1,6 @@
 .mobile-page-for-hebron-blog-wrapper {
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,13 +27,12 @@
     z-index: 2;
 }
 .mobile-page-hebron-blog-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 .mobile-page-hebron-blog-text {
     font-size: 1.5rem;
     overflow-wrap: unset;
-    padding-right: 20%;
 }
 .mobile-page-hebron-blog-button {
     margin-top: 3%;
