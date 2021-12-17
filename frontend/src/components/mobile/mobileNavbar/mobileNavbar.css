@@ -1,88 +1,94 @@
 .mobile-navbar-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100;
-  position: sticky;
-  top: 0px;
-  box-shadow: 0 0 10px rgb(199, 181, 181);
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 0 10px rgb(199, 181, 181);
+    z-index: 3;
+    background-color: white;
 }
 .mobile-navbar-logo-and-three-lines-wrapper {
-  display: flex;
-  flex-direction: row;
-  height: 4vh;
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
 }
 .three-lines-in-mobile-navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: flex-end;
 }
 .chest-in-mobile-navbar {
-  font-size: 5em;
-  align-self: flex-end;
-  line-height: 1;
+    font-size: 5em;
+    align-self: flex-end;
+    line-height: 1;
 }
 .line-in-mobile-navbar {
-  height: 0.15vh;
-  width: 7vw;
-  background-color: black;
+    height: 0.15vh;
+    width: 7vw;
+    background-color: black;
 }
 .three-lines-in-navbar-wrapper {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  width: 35%;
+    width: 35%;
 }
 .menu-in-mobile-navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .mobile-navbar-menu-page {
-  font-size: 2em;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 4vh;
-  margin-top: 3%;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    margin-top: 3%;
 }
 .mobile-navbar-menu-active-page {
-  color: orange;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mobile-navbar-menu-not-active-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mobile-navbar-menu-page-strip {
-  width: 40%;
-  height: 1px;
-  background-color: black;
+    width: 40vw;
+    height: 1px;
+    background-color: black;
 }
 .support-block-in-mobile-navbar {
-  color: white;
-  background-color: orange;
-  width: 40%;
-  height: 4vh;
-  font-size: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    color: white;
+    background-color: orange;
+    width: 40%;
+    height: 4vh;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .language-switcher-in-mobile-navbar-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 2em;
-  width: 20%;
-  margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2em;
+    width: 20%;
+    margin-top: 2vh;
+}
+.unstyled-link-navbar {
+    text-decoration: none;
+    color: black;
 }

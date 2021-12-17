@@ -1,0 +1,94 @@
+.mobile-page-wrapper {
+    width: 100%;
+}
+.change-life-together-wrapper {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+}
+.mobile-main-page-orange-strip {
+    width: 50%;
+    height: 25%;
+    margin-top: 5%;
+    background-color: orange;
+}
+.mobile-main-page-change-life-together-wrapper {
+    position: absolute;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    top: 10%;
+    left: 20%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+.hebron-building-image-wrapper {
+    width: 100%;
+    margin-top: 10vh;
+}
+.hebron-building-image-after-map-wrapper {
+    width: 100%;
+}
+.hebron-building-image-after-map-wrapper img {
+    width: 100%;
+}
+.hebron-building-image-wrapper img {
+    width: 100%;
+}
+.mobile-main-page-header-current-number-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.mobile-main-page-header-current-number-title-orange-line {
+    height: 4px;
+    width: 10%;
+    background-color: orange;
+    align-self: center;
+    margin-left: 10%;
+}
+.mobile-main-page-header-current-number-title-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-main-page-header-current-number-logo-wrapper {
+    width: 50%;
+}
+.mobile-main-page-header-li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mobile-main-page-header-current-number-text-wrapper {
+    width: 100%;
+}
+.mobile-main-page-header-current-number {
+    display: flex;
+    flex-direction: row;
+}
+.mobile-main-page-header-current-number-bold {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.mobile-main-page-header-current-number-faint {
+    color: grey;
+    align-self: flex-end;
+    font-size: 1.5rem;
+}
+.mobile-main-page-header-current-title-itself {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.main-page-header-ul {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3vh;
+}
+.mobile-main-page-logo-svg svg {
+    height: 200;
+}
+.mobile-main-page-map {
+    position: relative;
+}
