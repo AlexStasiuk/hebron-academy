@@ -32,10 +32,7 @@ const MobileFormOnMainPage = () => {
                         <b>на вступ!</b>
                     </span>
                 </div>
-                <form
-                    classname="mobile-form-form-wrapper"
-                    onSubmit={handleSubmit(onSubmit)}
-                >
+                <form onSubmit={handleSubmit(onSubmit)}>
                     <label className="d-flex flex-column mobile-form-label-wrapper">
                         <span>Name:</span>
                         <input type="text" {...register('name')} />
