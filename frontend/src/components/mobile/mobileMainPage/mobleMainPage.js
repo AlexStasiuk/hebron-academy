@@ -20,6 +20,7 @@ import MobilePageHebronMapInfo from '../mobilePageHebronMapInfo';
 import MobileFormOnMainPage from '../mobileFormOnMainPage';
 import MobileNewsInMainPage from '../mobileNewsInMainPage';
 import MobileGoogleMaps from '../mobileGoogleMaps';
+import MobileOrganizationAndAssociates from '../mobileOrganizationAndAssociates';
 
 const MobileMainPage = () => {
     const [currentHeaderPageId, setCurrentHeaderPageId] = useState(1);
@@ -247,6 +248,7 @@ const MobileMainPage = () => {
             <MobileFormOnMainPage />
             <MobileNewsInMainPage newsData={dataForNewsInThisPage} />
             <MobileGoogleMaps />
+            <MobileOrganizationAndAssociates />
         </div>
     );
 };
