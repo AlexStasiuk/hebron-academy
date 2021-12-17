@@ -1,11 +1,12 @@
 import React, { useCallback } from 'react';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import './mobileGoogleMaps.css';
+import MobileContactsNearGoogleMaps from '../mobileContactsNearGoogleMaps';
 
 const MobileGoogleMaps = () => {
     const containerStyle = {
-        width: '400px',
-        height: '400px',
+        width: '100%',
+        height: '40vh',
     };
 
     const center = {
@@ -25,21 +26,25 @@ const MobileGoogleMaps = () => {
         setMap(map);
     }, []);
 
-    const onUnmount = React.useCallback(function callback(map) {
+    const onUnmount = useCallback(function callback(map) {
         setMap(null);
     }, []);
 
     return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-        ></GoogleMap>
-    ) : (
-        <></>
-    );
+        <div className="mobile-google-maps-wrapper">
+            <GoogleMap
+                className=""
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={16}
+                onLoad={onLoad}
+                onUnmount={onUnmount}
+            >
+                {<Marker position={{ lat: 49.897094, lng: 23.924889 }} />}
+            </GoogleMap>
+            <MobileContactsNearGoogleMaps />
+        </div>
+    ) : null;
 };
 
 export default MobileGoogleMaps;
