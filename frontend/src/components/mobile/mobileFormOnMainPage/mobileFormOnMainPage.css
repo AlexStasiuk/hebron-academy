@@ -50,22 +50,24 @@
     border-style: none;
     color: white;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
+    align-self: center;
 }
 .mobile-form-label-wrapper {
     margin-top: 3vh;
     width: 100%;
 }
 .mobile-form-label-wrapper span {
-    margin-left: 1vw;
+    margin-left: -2vw;
     color: rosybrown;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .mobile-form-label-wrapper input {
     background-color: rgba(244, 244, 244, 1);
     border-style: none;
-    font-size: 3rem;
-    width: 100%;
+    font-size: 2rem;
+    width: 150%;
+    align-self: center;
 }
 .mobile-form-on-main-page-fill-statement {
     font-size: 3.5rem;

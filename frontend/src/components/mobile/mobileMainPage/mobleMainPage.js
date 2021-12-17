@@ -7,6 +7,9 @@ import H2Image from './Rectangle 337.png';
 import H3Image from './Habron design.png';
 import H4Image from './Rectangle 339.png';
 import H5Image from './Rectangle 340.png';
+import NewsImage1 from './Rectangle 17.png';
+import NewsImage2 from './Rectangle 130.png';
+import NewsImage3 from './Rectangle 132.png';
 
 import { ReactComponent as MissionLogo } from './Mission.svg';
 import { ReactComponent as VisionLogo } from './vision.svg';
@@ -15,6 +18,7 @@ import { ReactComponent as CredentialsLogo } from './credentials.svg';
 import MobilePageHebronInfoBlog from '../mobilePageHebronInfoBlog';
 import MobilePageHebronMapInfo from '../mobilePageHebronMapInfo';
 import MobileFormOnMainPage from '../mobileFormOnMainPage';
+import MobileNewsInMainPage from '../mobileNewsInMainPage';
 
 const MobileMainPage = () => {
     const [currentHeaderPageId, setCurrentHeaderPageId] = useState(1);
@@ -161,7 +165,32 @@ const MobileMainPage = () => {
             isButton: false,
         },
     ];
-
+    const dataForNewsInThisPage = [
+        {
+            id: 1,
+            title: 'Join a charity project',
+            subtitle: 'Newsletter',
+            link: '/news/1/',
+            text: 'Friends, 16 new students from different cities and villages of Ukraine have already come to study at Hebron IT Academy. All of them are from the social crisis category...',
+            img: NewsImage1,
+        },
+        {
+            id: 2,
+            title: 'Vlad Ostafii`s Success `Story',
+            subtitle: 'Success Story',
+            link: '/news/2/',
+            text: 'Hebron provided me with many opportunities, such as...',
+            img: NewsImage2,
+        },
+        {
+            id: 3,
+            title: 'How Can I Pray for Orphans?',
+            subtitle: 'Blog',
+            link: '/news/3/',
+            text: 'I bow my knees before the Father, From whom every family in heaven and on earth is named...',
+            img: NewsImage3,
+        },
+    ];
     return (
         <div className="mobile-page-wrapper">
             <div className="change-life-together-wrapper">
@@ -215,6 +244,7 @@ const MobileMainPage = () => {
                 dataForBlog={dataForMobilePageInfoBlog[4]}
             />
             <MobileFormOnMainPage />
+            <MobileNewsInMainPage newsData={dataForNewsInThisPage} />
         </div>
     );
 };
