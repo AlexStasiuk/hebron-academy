@@ -27,6 +27,12 @@
     width: 100%;
     margin-top: 10vh;
 }
+.hebron-building-image-after-map-wrapper {
+    width: 100%;
+}
+.hebron-building-image-after-map-wrapper img {
+    width: 100%;
+}
 .hebron-building-image-wrapper img {
     width: 100%;
 }

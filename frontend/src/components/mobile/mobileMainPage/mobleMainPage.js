@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './mobileMainPage.css';
 
 import HebronBuildingImg from './MobileMainPageHz.png';
 import H1Image from './Rectangle 317.png';
 import H2Image from './Rectangle 337.png';
 import H3Image from './Habron design.png';
+import H4Image from './Rectangle 339.png';
+import H5Image from './Rectangle 340.png';
 
 import { ReactComponent as MissionLogo } from './Mission.svg';
 import { ReactComponent as VisionLogo } from './vision.svg';
@@ -132,6 +134,31 @@ const MobileMainPage = () => {
             buttonTitle: 'Детальніше',
             buttonLink: '/nowhere/',
         },
+        {
+            category: 'МАЙБУТНЄ',
+            title: 'Наші Випускники ',
+            text: (
+                <span>
+                    В перспективі стають не лише кваліфікованими спеціалістами в
+                    галузі IT, а й СВІДОМИМИ та АКТИВНИМИ громадянами сучасного
+                    суспільства.
+                </span>
+            ),
+            isButton: false,
+        },
+        {
+            category: 'КОМАНДА',
+            title: 'Приєднуйтесь до нас!',
+            text: (
+                <span>
+                    Хеврон ІТ Академія - це спільнота  людей,  яким важлива доля
+                    соціально незахищеної молоді в Україні. Ми об’єднуємо
+                    довкола себе меценатів, жертводавців, волонтерів, менторів
+                    та просто небайдужих людей! 
+                </span>
+            ),
+            isButton: false,
+        },
     ];
 
     return (
@@ -170,15 +197,22 @@ const MobileMainPage = () => {
             />
             <div className="hebron-building-image-wrapper">
                 <MobilePageHebronMapInfo
-                    className="position-absolute"
                     dataForBlog={dataForMobilePageInfoBlog[2]}
                 ></MobilePageHebronMapInfo>
-                <img
-                    src={H3Image}
-                    alt="HebronBuilding mobile-main-page-map"
-                    className="mobile-main-page-hebron-map-image"
-                ></img>
+                <img src={H3Image} alt="HebronBuilding"></img>
             </div>
+            <div className="hebron-building-image-after-map-wrapper">
+                <img src={H4Image} alt="HebronBuilding"></img>
+            </div>
+            <MobilePageHebronInfoBlog
+                dataForBlog={dataForMobilePageInfoBlog[3]}
+            />
+            <div className="hebron-building-image-wrapper">
+                <img src={H5Image} alt="HebronBuilding"></img>
+            </div>
+            <MobilePageHebronInfoBlog
+                dataForBlog={dataForMobilePageInfoBlog[4]}
+            />
         </div>
     );
 };
