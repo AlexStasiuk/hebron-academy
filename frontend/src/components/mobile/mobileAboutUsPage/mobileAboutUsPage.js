@@ -5,7 +5,13 @@ import AboutUsImg1 from './aboutUsHeaderImg.png';
 import { ReactComponent as MissionLogo } from './Mission.svg';
 import { ReactComponent as VisionLogo } from './Vision.svg';
 import { ReactComponent as GoalLogo } from './Goal.svg';
+
+import Person1Img from './Person1.png';
+import Person2Img from './Person2.png';
+import Person3Img from './Person3.png';
+
 import MobileAboutUsPageStatutItems from '../mobileAboutUsPageStatutItems';
+import MobileAboutUsIntroduceWithHebronCommand from '../mobileAboutUsIntroduceWithHebronCommand';
 
 const MobileAboutUsPage = () => {
     const statutData = [
@@ -26,6 +32,26 @@ const MobileAboutUsPage = () => {
             title: 'БАЧЕННЯ',
             text: 'Бути центром інноваційної освіти для сиріт та молоді з групи ризику з наданням психологічної підтримки, побудованої на християнських цінностях.',
             logo: <VisionLogo className="mobile-about-us-page-logo" />,
+        },
+    ];
+    const hebronCommandData = [
+        {
+            id: 1,
+            name: 'Ігор Була',
+            img: Person1Img,
+            subtitle: 'Засновник та виконавчий директор.',
+        },
+        {
+            id: 2,
+            name: 'Орест Яцкуляк',
+            img: Person2Img,
+            subtitle: 'Заступник директора по навчально виховній роботі.',
+        },
+        {
+            id: 3,
+            name: 'Валентина Юсуфенко',
+            img: Person3Img,
+            subtitle: 'Заступниця директора з А-Г роботі.',
         },
     ];
     return (
@@ -60,6 +86,9 @@ const MobileAboutUsPage = () => {
                 <span>СТАТУТ</span>
             </div>
             <MobileAboutUsPageStatutItems statutData={statutData} />
+            <MobileAboutUsIntroduceWithHebronCommand
+                hebronCommandData={hebronCommandData}
+            />
         </div>
     );
 };

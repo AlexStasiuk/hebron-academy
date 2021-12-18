@@ -1,0 +1,3 @@
+import MobileAboutUsIntroduceWithHebronCommand from './mobileAboutUsIntroduceWithHebronCommand';
+
+export default MobileAboutUsIntroduceWithHebronCommand;
