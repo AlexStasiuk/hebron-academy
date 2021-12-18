@@ -1,6 +1,7 @@
 import React from 'react';
 import './mobileAboutUsPage.css';
 import AboutUsImg1 from './aboutUsHeaderImg.png';
+import AboutUsImg2 from './Rectangle 744.png';
 
 import { ReactComponent as MissionLogo } from './Mission.svg';
 import { ReactComponent as VisionLogo } from './Vision.svg';
@@ -22,6 +23,8 @@ import MobileAboutUsPageStatutItems from '../mobileAboutUsPageStatutItems';
 import MobileAboutUsIntroduceWithHebronCommand from '../mobileAboutUsIntroduceWithHebronCommand';
 import MobileAboutUsGallery from '../mobileAboutUsGallery';
 import MobileAboutUsReviews from '../mobileAboutUsReviews';
+import MobileAboutUsQuestions from '../mobileAboutUsQuestions';
+import MobileGoogleMaps from '../mobileGoogleMaps';
 
 const MobileAboutUsPage = () => {
     const statutData = [
@@ -96,6 +99,32 @@ const MobileAboutUsPage = () => {
             name: 'o',
         },
     ];
+    const questionsData = [
+        {
+            id: 1,
+            question: 'Хто може навчатись в Хеврон IT Академії?',
+            answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.',
+            showAnswer: false,
+        },
+        {
+            id: 2,
+            question: 'Що таке Хеврон IT Академія?',
+            answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.',
+            showAnswer: false,
+        },
+        {
+            id: 3,
+            question: 'Хто фінансує Академію?',
+            answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.',
+            showAnswer: false,
+        },
+        {
+            id: 4,
+            question: 'Як долучитись до розвитку проекту?',
+            answer: 'Особи із числа дітей-сиріт та дітей, позбавлених батьківського піклування; особи віком від 18 до 25 років, у яких у віці до 18 років померли або загинули батьки. Особи, які мають статус внутрішньо переміщених осіб, діти учасників АТО та молодь, яка опинилась у інших важких життєвих ситуаціях.',
+            showAnswer: false,
+        },
+    ];
     return (
         <div className="mobile-page-about-us-page-wrapper">
             <div className="hebron-building-image-after-map-wrapper">
@@ -133,6 +162,13 @@ const MobileAboutUsPage = () => {
             />
             <MobileAboutUsGallery photos={gallaryData} />
             <MobileAboutUsReviews dataForReviews={dataForReviews} />
+            <div className="about-us-page-video-block-wrapper">
+                <div className="hebron-building-image-after-map-wrapper">
+                    <img src={AboutUsImg2} alt="HebronBuilding"></img>
+                </div>
+            </div>
+            <MobileAboutUsQuestions questionsData={questionsData} />
+            <MobileGoogleMaps />
         </div>
     );
 };
