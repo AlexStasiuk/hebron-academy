@@ -1,0 +1,47 @@
+.mobile-about-us-questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 10vh;
+}
+
+.mobile-about-us-questions-li-wrapper {
+    width: 100%;
+
+    margin-top: 3vh;
+}
+.mobile-about-us-questions-empty-block {
+    margin-top: 3vh;
+}
+.mobile-about-us-questions-li-wrapper div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(240, 240, 240, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.mobile-about-us-questions-li-answer {
+    font-size: 1.5rem;
+    color: rgba(152, 152, 152, 1);
+}
+.mobile-about-us-questions-li-number {
+    color: orange;
+    width: 10%;
+    margin-left: 3vw;
+    font-weight: 900;
+    margin-right: 3vw;
+}
+.mobile-about-us-questions-li-question {
+    width: 70%;
+    font-size: 2rem;
+    margin-right: 4vw;
+}
+.mobile-about-us-questions-li-show-answer {
+    font-size: 5rem;
+    color: orange;
+}
