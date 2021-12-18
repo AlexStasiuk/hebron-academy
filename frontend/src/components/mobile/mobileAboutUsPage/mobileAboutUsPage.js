@@ -10,8 +10,16 @@ import Person1Img from './Person1.png';
 import Person2Img from './Person2.png';
 import Person3Img from './Person3.png';
 
+import Gallery1Image from './gallery1.png';
+import Gallery2Image from './gallery2.png';
+import Gallery3Image from './gallery3.png';
+import Gallery4Image from './gallery4.png';
+import Gallery5Image from './gallery5.png';
+import Gallery6Image from './gallery6.png';
+
 import MobileAboutUsPageStatutItems from '../mobileAboutUsPageStatutItems';
 import MobileAboutUsIntroduceWithHebronCommand from '../mobileAboutUsIntroduceWithHebronCommand';
+import MobileAboutUsGallery from '../mobileAboutUsGallery';
 
 const MobileAboutUsPage = () => {
     const statutData = [
@@ -54,6 +62,17 @@ const MobileAboutUsPage = () => {
             subtitle: 'Заступниця директора з А-Г роботі.',
         },
     ];
+    const gallaryData = [
+        { id: 1, img: Gallery1Image },
+        { id: 2, img: Gallery2Image },
+        { id: 3, img: Gallery3Image },
+        { id: 4, img: Gallery4Image },
+        { id: 5, img: Gallery5Image },
+        { id: 6, img: Gallery6Image },
+        { id: 7, img: Gallery3Image },
+        { id: 8, img: Gallery4Image },
+        { id: 9, img: Gallery5Image },
+    ];
     return (
         <div className="mobile-page-about-us-page-wrapper">
             <div className="hebron-building-image-after-map-wrapper">
@@ -89,6 +108,7 @@ const MobileAboutUsPage = () => {
             <MobileAboutUsIntroduceWithHebronCommand
                 hebronCommandData={hebronCommandData}
             />
+            <MobileAboutUsGallery photos={gallaryData} />
         </div>
     );
 };
