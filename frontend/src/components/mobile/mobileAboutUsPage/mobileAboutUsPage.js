@@ -9,6 +9,7 @@ import { ReactComponent as GoalLogo } from './Goal.svg';
 import Person1Img from './Person1.png';
 import Person2Img from './Person2.png';
 import Person3Img from './Person3.png';
+import ReviewerPerson1 from './reviewerPhoto1.png';
 
 import Gallery1Image from './gallery1.png';
 import Gallery2Image from './gallery2.png';
@@ -20,6 +21,7 @@ import Gallery6Image from './gallery6.png';
 import MobileAboutUsPageStatutItems from '../mobileAboutUsPageStatutItems';
 import MobileAboutUsIntroduceWithHebronCommand from '../mobileAboutUsIntroduceWithHebronCommand';
 import MobileAboutUsGallery from '../mobileAboutUsGallery';
+import MobileAboutUsReviews from '../mobileAboutUsReviews';
 
 const MobileAboutUsPage = () => {
     const statutData = [
@@ -73,6 +75,27 @@ const MobileAboutUsPage = () => {
         { id: 8, img: Gallery4Image },
         { id: 9, img: Gallery5Image },
     ];
+    const dataForReviews = [
+        {
+            id: 1,
+            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            name: 'Ник Вуйчич',
+            img: ReviewerPerson1,
+        },
+        { id: 2, quote: 'Lorem ididuiquipvolu', img: Person1Img, name: 'o' },
+        {
+            id: 3,
+            quote: 'Lorem ididuiquipvolu33',
+            img: Person2Img,
+            name: 'o',
+        },
+        {
+            id: 4,
+            quote: 'Lorem ididuiquipvolu334',
+            img: Person3Img,
+            name: 'o',
+        },
+    ];
     return (
         <div className="mobile-page-about-us-page-wrapper">
             <div className="hebron-building-image-after-map-wrapper">
@@ -109,6 +132,7 @@ const MobileAboutUsPage = () => {
                 hebronCommandData={hebronCommandData}
             />
             <MobileAboutUsGallery photos={gallaryData} />
+            <MobileAboutUsReviews dataForReviews={dataForReviews} />
         </div>
     );
 };

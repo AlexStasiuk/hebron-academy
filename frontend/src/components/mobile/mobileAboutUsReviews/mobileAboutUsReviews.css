@@ -1,0 +1,77 @@
+.mobile-about-us-reviews-wrapper {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 50vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+.mobile-about-us-reviews-wrapper-first-span {
+    font-size: 4rem;
+    font-weight: 600;
+    align-self: center;
+}
+.mobile-about-us-reviews-div-li-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    font-size: 1.5rem;
+    height: 80%;
+}
+.mobile-about-us-reviews-info-wrapper {
+    height: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    align-items: center;
+}
+.mobile-about-us-reviews-div-li-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-about-us-reviews-li-wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 90%;
+    margin-right: 10%;
+    position: relative;
+    padding: 1.5vh;
+}
+.mobile-about-us-reviews-quote {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-about-us-reviews-name {
+    font-size: 3rem;
+    margin-top: 2vh;
+    font-weight: 600;
+}
+.mobile-about-us-reviews-vector-1 {
+    position: absolute;
+    top: 0;
+    left: 42vw;
+    width: 2.5vw;
+}
+.mobile-about-us-reviews-vector-2 {
+    position: absolute;
+    top: 0;
+    left: 38vw;
+    width: 2.5vw;
+}
+.mobile-about-us-reviews-img {
+    position: absolute;
+    bottom: -3.5vh;
+    left: 32vw;
+    width: 18vw;
+}
