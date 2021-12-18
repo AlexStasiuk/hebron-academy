@@ -1,0 +1,30 @@
+.mobile-sacrif img {
+    width: 80%;
+}
+
+.mobile-btn-open {
+    margin-top: 5%;
+    border: none;
+    background-color: #fd7823;
+    width: 80%;
+    height: 80px;
+    font-size: 40px;
+    color: white;
+}
+
+.mobile-sacrif-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.mobile-sacrif p {
+    font-size: 40px;
+    color: #fd7823;
+}
+
+.mobile-sacrif span {
+    font-size: 80px;
+}

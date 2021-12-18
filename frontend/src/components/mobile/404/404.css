@@ -1,0 +1,47 @@
+.mobile-error-content {
+    background-color: #3a5549;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 1100px;
+    margin-left: 10%;
+}
+
+.mobile-img-one img {
+    width: 45%;
+    margin-left: 60%;
+}
+
+.mobile-error-center {
+    margin-top: -15%;
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-error-center span {
+    color: white;
+    font-size: 140px;
+    font-weight: 600;
+}
+
+.mobile-error-center p {
+    color: white;
+    font-size: 30px;
+}
+
+.mobile-btn-home {
+    border: none;
+    background-color: #fd7823;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.mobile-img-two img {
+    width: 40%;
+    margin-right: 60%;
+}
