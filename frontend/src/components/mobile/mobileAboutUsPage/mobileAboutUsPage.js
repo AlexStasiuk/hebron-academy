@@ -2,7 +2,32 @@ import React from 'react';
 import './mobileAboutUsPage.css';
 import AboutUsImg1 from './aboutUsHeaderImg.png';
 
+import { ReactComponent as MissionLogo } from './Mission.svg';
+import { ReactComponent as VisionLogo } from './Vision.svg';
+import { ReactComponent as GoalLogo } from './Goal.svg';
+import MobileAboutUsPageStatutItems from '../mobileAboutUsPageStatutItems';
+
 const MobileAboutUsPage = () => {
+    const statutData = [
+        {
+            id: 1,
+            title: 'МІСІЯ',
+            text: 'Забезпечити молодь з групи ризику безкоштовним навчанням та практикою в галузі ІТ,  менторством, наставництвом, можливостями всебічного розвитку.',
+            logo: <MissionLogo className="mobile-about-us-page-logo" />,
+        },
+        {
+            id: 2,
+            title: 'ЦІЛЬ',
+            text: ' Допомогти соціально незахищеній молоді реалізуватися в суспільстві, шляхом виховання у них моральних цінностей та здобуття професійної кваліфікації в IT сфері, що допоможе їм у майбутньому.',
+            logo: <GoalLogo className="mobile-about-us-page-logo" />,
+        },
+        {
+            id: 3,
+            title: 'БАЧЕННЯ',
+            text: 'Бути центром інноваційної освіти для сиріт та молоді з групи ризику з наданням психологічної підтримки, побудованої на християнських цінностях.',
+            logo: <VisionLogo className="mobile-about-us-page-logo" />,
+        },
+    ];
     return (
         <div className="mobile-page-about-us-page-wrapper">
             <div className="hebron-building-image-after-map-wrapper">
@@ -34,6 +59,7 @@ const MobileAboutUsPage = () => {
             <div className="mobile-page-about-us-statut-block-wrapper">
                 <span>СТАТУТ</span>
             </div>
+            <MobileAboutUsPageStatutItems statutData={statutData} />
         </div>
     );
 };

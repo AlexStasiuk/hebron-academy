@@ -1,0 +1,46 @@
+.mobile-about-us-page-statut-items-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.mobile-about-us-page-statut-item-logo-about-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0.5vh;
+}
+.mobile-about-us-page-statut-item-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.mobile-about-us-page-statut-item-about-number-line-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.mobile-about-us-page-statut-li-about-wrapper {
+    margin-top: 5vh;
+    height: 25vh;
+}
+.mobile-about-us-page-statut-item-about-number {
+    color: rgb(192, 189, 189);
+    font-size: 2.5rem;
+}
+.mobile-about-us-page-statut-item-about-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.mobile-about-us-page-statut-li-text {
+    font-size: 2rem;
+    padding-top: 5vh;
+}
+.mobile-about-us-page-statut-item-about-orange-line {
+    width: 5vw;
+    height: 5px;
+    background-color: orange;
+    align-self: center;
+    margin-left: 2vw;
+}
