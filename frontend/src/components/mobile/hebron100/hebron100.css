@@ -1,0 +1,199 @@
+.mobile-hebron100 img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mobile-hebron100 {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-hebron100 p {
+    font-size: 40px;
+    color: #fd7823;
+}
+
+.mobile-hebron100 span {
+    font-size: 60px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mobile-hebron100 span:last-child {
+    font-size: 40px;
+}
+
+.mobile-hebron100-b {
+    margin-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.mobile-hebron100-b img {
+    width: 100%;
+}
+
+.mobile-hebron100-b p {
+    font-size: 40px;
+    color: #fd7823;
+}
+
+.mobile-hebron100-b span {
+    font-size: 70px;
+}
+
+.mobile-hebron100-b span:last-child {
+    font-size: 40px;
+}
+
+.mobile-hebron100-c {
+    height: 1100px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fd7823;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.mobile-hebron100-c span {
+    font-size: 80px;
+    color: white;
+}
+
+.mobile-hebron100-c p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+.mobile-btn-list {
+    background-color: white;
+    color: #fd7823;
+    width: 80%;
+    border: none;
+    margin-left: 10%;
+    height: 80px;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.mobile-warning {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-warning p {
+    font-size: 60px;
+    color: #fd7823;
+}
+
+.mobile-warning span {
+    font-size: 60px;
+}
+
+.mobile-floatingSelect {
+    margin-top: 5%;
+}
+
+.mobile-form-select {
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mobile-write-off span {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.mobile-requisites label {
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+    color: #d1d1d1;
+    margin-left: 10%;
+}
+.mobile-requisites input {
+    font-size: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mobile-text-agree {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.mobile-text-agree span {
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.mobile-banking {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.mobile-banking img {
+    width: 10%;
+    height: 20%;
+    margin-left: 10%;
+}
+
+.mobile-btn-support {
+    background-color: #fd7823;
+    color: white;
+    width: 30%;
+    height: 10%;
+    font-size: 40px;
+    margin-left: 20%;
+}
+
+.mobile-data {
+    background-color: #f5f5f5;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.mobile-recquisit {
+    font-size: 50px;
+    border-bottom: 5px solid gray;
+}
+
+.mobile-bank-iban {
+    border-bottom: 5px solid gray;
+}
+
+.mobile-bank-iban span {
+    font-size: 40px;
+}
+
+.mobile-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-cont span {
+    font-size: 30px;
+}
+
+.mobile-cont label {
+    font-size: 30px;
+    font-weight: 600;
+}
