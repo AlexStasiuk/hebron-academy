@@ -1,12 +1,12 @@
 .mobile-navbar-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100;
+    width: 100%;
     position: sticky;
     top: 0px;
     box-shadow: 0 0 10px rgb(199, 181, 181);
-    z-index: 3;
     background-color: white;
+    z-index: 3;
 }
 .mobile-navbar-logo-and-three-lines-wrapper {
     display: flex;
