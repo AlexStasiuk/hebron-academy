@@ -1,74 +1,72 @@
-.content-learn{
+.content-learn {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.image-learn{
+.image-learn {
     display: flex;
     justify-content: center;
-
 }
-.learn-learn{
+.learn-learn {
     display: flex-start;
     width: 100%;
     height: 500px;
 }
 
-.txt-learn{
+.txt-learn {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.text-about-learn{
+.text-about-learn {
     position: relative;
-    top:20%;
+    top: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.text-title-learn{
+.text-title-learn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-size: 1em;
 }
-.text-title-learn h1:last-child{
-    color:rgba(253, 120, 35, 1);
-    
+.text-title-learn h1:last-child {
+    color: rgba(253, 120, 35, 1);
 }
 
-.books-learn img{
+.books-learn img {
     width: 100%;
-    height: 100%ж
+    height: 100%ж;
 }
 
-.lr-learn{
-    top:10%;
+.lr-learn {
+    top: 10%;
     position: relative;
     background-color: rgba(253, 120, 35, 1);
 }
-.lr-learn img{
+.lr-learn img {
     width: 200%;
 }
 
-.txt-learn li{
+.txt-learn li {
     list-style: square;
     list-style-position: outside;
-    color:rgba(253, 120, 35, 1);
+    color: rgba(253, 120, 35, 1);
     text-align: start;
 }
 
-li span{
-    color:black;
+li span {
+    color: black;
 }
 
-.about-study-learn{
-    font-size: .85em;
+.about-study-learn {
+    font-size: 0.85em;
 }
 
-.work-academy-learn{
+.work-academy-learn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,45 +75,46 @@ li span{
     position: relative;
 }
 
-.how-academy-works-wrapper-learn{
+.how-academy-works-wrapper-learn {
     display: flex;
     flex-direction: row;
     margin-top: 17%;
     width: 40%;
-    
 }
 
-.dd-learn{ 
+.dd-learn {
     align-self: center;
 }
 
-.d-a-learn{
+.d-a-learn {
     width: 15px;
     height: 15px;
     background-color: rgba(253, 120, 35, 1);
 }
 
-.d-b-learn{
+.d-b-learn {
     margin-top: 10px;
     width: 15px;
     height: 15px;
     background-color: rgba(253, 120, 35, 1);
 }
 
-.academy-learn{
+.academy-learn {
     position: relative;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
     height: 50%;
+    padding-top: 20vh;
+    margin-left: 5vw;
 }
-.a-learn{
+.a-learn {
     width: 32%;
     height: 100%;
 }
 
-.no-gutters{
+.no-gutters {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
@@ -126,12 +125,11 @@ li span{
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 10%;
-    
 }
-.a-img-learn img{
+.a-img-learn img {
     margin-left: 25%;
 }
-.a-img-learn .one-learn{
+.a-img-learn .one-learn {
     display: flex;
     justify-content: center;
     background-color: rgba(253, 120, 35, 1);
@@ -140,176 +138,170 @@ li span{
     height: 11%;
     font-size: 25px;
     font-weight: 600;
-
 }
-.a-img-learn span{
+.a-img-learn span {
     font-size: 30px;
     font-weight: 600;
 }
 
-.a-p-learn{
+.a-p-learn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.c-img-learn img{
+.c-img-learn img {
     margin-left: 81px;
-    width: 64px;    
+    width: 64px;
     height: 63px;
 }
 
-.h-learn img{
+.h-learn img {
     position: absolute;
     width: 70%;
     height: 30%;
     left: 15%;
-    top:30%;
+    top: 30%;
     color: rgba(211, 211, 211, 0.19);
 }
 
-.hh-learn{
+.hh-learn {
     border-width: 1px;
     height: 150px;
 }
 
-.h-a-learn{
+.h-a-learn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color: rgba(253, 120, 35, 1);
     border-bottom: 1px solid gray;
-    background-color:#F5F5F5;
+    background-color: #f5f5f5;
 }
 
-.h-a-learn span{
+.h-a-learn span {
     margin-left: 30%;
     font-size: 25px;
     font-weight: 600;
 }
 
-.h-b-learn{
-
+.h-b-learn {
     background-color: rgba(253, 120, 35, 1);
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
-.h-b-learn span{
+.h-b-learn span {
     margin-left: 10%;
     font-size: 19px;
     font-weight: 400;
 }
 
-.devel-learn{
+.devel-learn {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
-.img-a-learn{
+.img-a-learn {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.img-a-learn img{
-   position: relative;
-   margin-left: 120%;
-   width: 50px;
-   height: 50px;
+.img-a-learn img {
+    position: relative;
+    margin-left: 120%;
+    width: 50px;
+    height: 50px;
 }
 
-.d-a-p-learn{
+.d-a-p-learn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.d-a-t-learn{
+.d-a-t-learn {
     margin-top: 5%;
 }
 
-.img-b-learn img{
+.img-b-learn img {
     position: relative;
     margin-left: 120%;
     width: 50px;
     height: 50px;
 }
 
-.d-b-p-learn{
+.d-b-p-learn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.img-c-learn{
+.img-c-learn {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.img-c-learn img{
+.img-c-learn img {
     position: relative;
     margin-left: 120%;
     width: 50px;
     height: 50px;
 }
 
-.d-c-p-learn{
+.d-c-p-learn {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.success-learn{
+.success-learn {
     display: flex;
     flex-direction: column;
 }
 
-.s-h-learn{
+.s-h-learn {
     margin-top: 8%;
 }
 
-.s-info-learn{
+.s-info-learn {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10%;
-   
 }
 
-.s-info-learn img{
+.s-info-learn img {
     width: 40%;
     height: auto;
-    box-shadow: 0 0, -2em 2em .2em rgba(243, 243, 243, 1);
+    box-shadow: 0 0, -2em 2em 0.2em rgba(243, 243, 243, 1);
 }
 
-.s-info-learn .card{
+.s-info-learn .card {
     width: 50%;
     height: 3%;
     opacity: 70%;
 }
 
-.s-info-learn .btn-learn{
+.s-info-learn .btn-learn {
     margin-left: 70%;
 }
 
-.s-info-learn .block-fullname-learn{
+.s-info-learn .block-fullname-learn {
     position: relative;
     bottom: 70%;
-     
 }
 
-.s-info-learn .card-learn h3:hover{
+.s-info-learn .card-learn h3:hover {
     transition: all 0.5s ease;
     height: 100%;
     background-color: rgba(253, 120, 35, 1);
     color: white;
     border-radius: 5px;
 }
-

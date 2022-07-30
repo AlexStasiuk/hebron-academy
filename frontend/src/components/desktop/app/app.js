@@ -12,48 +12,51 @@ import Learn from '../learn';
 import Donations from '../donations';
 import HebronOneHundred from '../hebron100';
 import Navbar from '../navbar';
-
+import TestComp from '../test-comp';
 import './app.css';
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Navbar/>
+            <Navbar />
             <Switch>
-                <Route path='/news/'>
-                    <News/>
+                <Route path="/test/">
+                    <TestComp />
                 </Route>
-                <Route exact path='/'>
-                    <MainPage/>
+                <Route path="/news/">
+                    <News />
                 </Route>
-                <Route path='/about-us/'>
-                    <AboutUs/>
+                <Route exact path="/">
+                    <MainPage />
                 </Route>
-                <Route path='/hebron-needs-join-page/'>
-                    <HebronNeedsJoinPage/>
+                <Route path="/about-us/">
+                    <AboutUs />
                 </Route>
-                <Route path='/join/'>
-                    <Join/>
+                <Route path="/hebron-needs-join-page/">
+                    <HebronNeedsJoinPage />
                 </Route>
-                <Route path='/education/'>
+                <Route path="/join/">
+                    <Join />
+                </Route>
+                <Route path="/education/">
                     <Learn />
                 </Route>
-                <Route path='/donations/'>
-                    <Donations/>
+                <Route path="/donations/">
+                    <Donations />
                 </Route>
-                <Route path='/hebron100/'>
-                    <HebronOneHundred/>
+                <Route path="/hebron100/">
+                    <HebronOneHundred />
                 </Route>
-                <Route path='/credentials/'>
-                    <HebronNeedsJoinPage/>
+                <Route path="/credentials/">
+                    <HebronNeedsJoinPage />
                 </Route>
-                <Route path='*'>
-                    <Error/>
+                <Route path="*">
+                    <Error />
                 </Route>
             </Switch>
-            
-            <Footer/>
+
+            <Footer />
         </BrowserRouter>
     );
-}
+};
 export default App;
